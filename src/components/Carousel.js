@@ -7,8 +7,9 @@ const Carousel = () => {
   let imgIndexRef = useRef(0);
   const [imgLoaded, setImgLoaded] = useState(false);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
+  const nextImage = () => {
+    setImgLoaded(false);
+    setTimeout(() => {
       if (imgIndexRef.current < images.length - 1) {
         imgIndexRef.current = imgIndexRef.current + 1;
         setImgIndex((state) => state + 1);
@@ -16,7 +17,13 @@ const Carousel = () => {
         imgIndexRef.current = 0;
         setImgIndex((state) => state - (images.length - 1));
       }
-    }, 6000);
+    }, 800);
+  };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextImage();
+    }, 8000);
     return () => {
       clearInterval(interval);
     };
@@ -27,7 +34,7 @@ const Carousel = () => {
       <img
         src={require(`../assets/img/${images[imgIndex]}`)}
         alt="carousel"
-        className={imgLoaded ? "img-loaded" : ""}
+        className={imgLoaded ? "img-loaded" : "img-in-loading"}
         onLoad={() => {
           setImgLoaded(true);
         }}
