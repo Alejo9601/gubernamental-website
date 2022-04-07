@@ -9,15 +9,13 @@ const Carousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       if (imgIndexRef.current < images.length - 1) {
-        console.log("verdadero");
         imgIndexRef.current = imgIndexRef.current + 1;
         setImgIndex((state) => state + 1);
       } else {
         imgIndexRef.current = 0;
         setImgIndex((state) => state - (images.length - 1));
-        console.log("falso");
       }
-    }, 3000);
+    }, 6000);
     return () => {
       clearInterval(interval);
     };

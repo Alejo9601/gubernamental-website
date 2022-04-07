@@ -1,13 +1,13 @@
 import "./App.css";
 import "./styles/globals.css";
 import Header from "./components/Header";
-import Carousel from "./components/Carousel";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Carousel />
+      <Home />
     </div>
   );
 }
