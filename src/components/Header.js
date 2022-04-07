@@ -1,8 +1,8 @@
 import "../styles/header.css";
-import logo from "../assets/icons/prov-santacruz.png";
-import facebook from "../assets/icons/facebook.png";
-import instagram from "../assets/icons/instagram.png";
-import twitter from "../assets/icons/twitter.png";
+import logo from "../assets/icon/prov-santacruz.png";
+import facebook from "../assets/icon/facebook.png";
+import instagram from "../assets/icon/instagram.png";
+import twitter from "../assets/icon/twitter.png";
 import MobileMenu from "./MobileMenu";
 import DesktopMenu from "./DesktopMenu";
 import useMobileObserver from "../hooks/useMobileObserver";

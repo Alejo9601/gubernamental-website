@@ -1,0 +1,19 @@
+.section-content#home {
+    position: relative;
+}
+.img-container#carousel{
+    min-height: 100vh;
+}
+
+.img-container#carousel img{
+    max-width: 100vw;
+}
+
+.dark-overlay{
+    position: absolute;
+    background-color: black;
+    min-height: 100vh;
+    min-width: 100vw;
+    top: 0;
+    opacity: 0.5;
+}
