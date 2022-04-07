@@ -10,17 +10,36 @@
     background-color: gray;
 }
 
+.flex-container#logo-socialNetworks{
+    justify-content: space-between;
+    width: 100%;
+}
+
 .logo,
 .social-networks {
-    flex-basis: 35%;
     display: inherit;
     align-items: center;
     color: white;
-    margin:20px
+    margin: 10px 90px 10px 90px;
 }
 
 .social-networks {
+    flex-basis: 20%;
     justify-content: flex-end;
+    background-color: white;
+    border-radius: 15px;
+    justify-content: space-evenly;
+    box-shadow: 5px 5px 5px black;
+}
+
+.social-networks img{
+    height: 32px;
+    width: auto;
+    padding: 5px 0px 5px 0px;
+}
+
+.social-networks:hover img{
+    cursor: pointer;
 }
 
 .logo {
@@ -31,10 +50,15 @@
     height: 64px;
     width: auto;
     padding: 0px 20px 0px 0px;
+
+}
+
+.img-description#logo-description {
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .navbar {
-    display: inherit;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -44,6 +68,12 @@
 .mobnav-links,
 .desknav-links{
     list-style: none;
+    font-size: 1.7rem;
+}
+
+.desknav-links{
+    display: flex;
+    flex-direction: row;
 }
 
 .mobnav-item,
@@ -51,7 +81,8 @@
     padding: 15px;
 }
 
-.desknav-links{
-    display: flex;
-    flex-direction: row;
+.mobnav-item:hover,
+.desknav-item:hover{
+    color: #548CFF;
+    font-weight: bolder;
 }
