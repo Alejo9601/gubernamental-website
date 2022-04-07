@@ -5,6 +5,7 @@ const Carousel = () => {
   const images = ["4.jpg", "el_chalten.jpg", "glaciares.jpg"];
   const [imgIndex, setImgIndex] = useState(0);
   let imgIndexRef = useRef(0);
+  const [imgLoaded, setImgLoaded] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -22,13 +23,17 @@ const Carousel = () => {
   }, []);
 
   return (
-    <section className="section-content" id="home">
-      <picture className="img-container" id="carousel">
-        <source srcSet={require(`../assets/img/${images[imgIndex]}`)} />
-        <img alt="carousel" />
-        <div className="dark-overlay"></div>
-      </picture>
-    </section>
+    <div className="img-container" id="carousel">
+      <img
+        src={require(`../assets/img/${images[imgIndex]}`)}
+        alt="carousel"
+        className={imgLoaded ? "img-loaded" : ""}
+        onLoad={() => {
+          setImgLoaded(true);
+        }}
+      />
+      <div className="dark-overlay"></div>
+    </div>
   );
 };
 

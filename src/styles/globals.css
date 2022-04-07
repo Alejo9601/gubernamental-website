@@ -10,7 +10,7 @@ html {
 body{
     min-height: 1200px;
     min-width: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .flex-container {
