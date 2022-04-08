@@ -1,3 +1,3 @@
-.container#latest-news{
-    max-width: 1600px;
+.flex-container#latest-news{
+    background-color: var(--white);
 }
