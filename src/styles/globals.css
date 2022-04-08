@@ -5,7 +5,8 @@
 
 :root {
     --blue: #548CFF;
-    --white: #f7f7f7;
+    --white: #fff;
+    --light_gray: #F4F9F9;
 }
 
 html {

@@ -1,0 +1,14 @@
+.footer {
+  background-color: var(--light_gray);
+}
+
+.footer-copyright {
+  color: black;
+  font-size: 1.5rem;
+  text-align: left;
+  width: 100%;
+  padding: 30px 20px 30px 20px;
+  margin: 0px 20px 0 20px;
+  font-weight: 400;
+  text-align: center;
+}
