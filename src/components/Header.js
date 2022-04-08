@@ -14,7 +14,12 @@ const Header = () => {
 
   return (
     <header className={isScrolled ? "header emphasized" : "header"}>
-      <div className="flex-container" id="logo-socialNetworks">
+      <div
+        className={`flex-container ${
+          isScrolled ? "displayed" : "non-displayed"
+        }`}
+        id="logo-socialNetworks"
+      >
         <picture className="logo">
           <source srcSet={logo} />
           <img id="logo" alt="logo" />
