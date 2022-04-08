@@ -1,4 +1,4 @@
-const RefButton = ({ className, reference, btnText }) => {
+const RefButton = ({ reference, btnText }) => {
   return (
     <div className="flex-container ref-button">
       <div className="btn-symbol" id="see-more">
@@ -7,7 +7,6 @@ const RefButton = ({ className, reference, btnText }) => {
       <a
         style={{ textDecoration: "none" }}
         href={reference}
-        className={className}
         target="_blank"
         rel="noreferrer noopener"
       >

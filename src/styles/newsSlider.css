@@ -38,15 +38,18 @@
 }
 
 .news-title,
-.news-description {
+.news-description,
+.ref-button {
    width: 80%;
 }
 
+.news-title,
+.ref-button {
+    margin: 30px 0px 30px 0px;
+}
+
 .news-title {
-    background-color: aqua;
     font-size: 2rem;
-    margin-bottom: 15px;
-    margin-top: 20px;
 }
 
 .news-description {
@@ -55,9 +58,15 @@
 }
 
 .ref-button {
+    width: 80%;
     background-color: transparent;
-    margin-top: 50px;
-    margin-right: 100px;
+    justify-content: flex-start;
+}
+
+.ref-button a{
+    font-size: 1.5rem;
+    padding-left: 5px;
+    cursor: pointer;
 }
 
 .btn-symbol#see-more{
@@ -66,10 +75,12 @@
 }
 
 .btn-symbol#see-more p{
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 5px 10px 5px 10px;
     font-weight: bold;
     color: var(--blue)
 }
+
+
 
 
