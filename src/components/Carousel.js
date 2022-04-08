@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import "../styles/carousel.css";
 
 const Carousel = () => {
-  const images = ["4.jpg", "el_chalten.jpg", "glaciares.jpg"];
+  const images = ["inicio.jpg", "el_chalten.jpg", "glaciares.jpg"];
   const [imgIndex, setImgIndex] = useState(0);
   let imgIndexRef = useRef(0);
   const [imgLoaded, setImgLoaded] = useState(false);
