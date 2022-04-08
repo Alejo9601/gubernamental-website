@@ -9,6 +9,9 @@ const Home = () => {
         <Carousel />
       </section>
       <section className="section-content flex-container" id="latest-news">
+        <div className="section-title" id="latest-news-title">
+          <h1>Ultimas Novedades</h1>
+        </div>
         <NewsSlider />
       </section>
     </>
