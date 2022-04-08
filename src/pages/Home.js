@@ -8,7 +8,7 @@ const Home = () => {
       <section className="section-content" id="home">
         <Carousel />
       </section>
-      <section className="section-content" id="latest-news">
+      <section className="section-content flex-container" id="latest-news">
         <NewsSlider />
       </section>
     </>

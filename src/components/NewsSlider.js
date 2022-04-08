@@ -6,15 +6,15 @@ const NewsSlider = () => {
     <div className="flex-container" id="news-slider">
       <NewsCard
         newsTitle="Noticia 1"
-        description="Esta es una nueva noticia de prueba"
+        description="Cinco siglos más tarde Lorem Ipsum experimentó una oleada de popularidad con el lanzamiento de hojas de transferencia seca de Letraset."
       />
       <NewsCard
         newsTitle="Noticia 1"
-        description="Esta es una nueva noticia de prueba"
+        description="Cinco siglos más tarde Lorem Ipsum experimentó una oleada de popularidad con el lanzamiento de hojas de transferencia seca de Letraset."
       />
       <NewsCard
         newsTitle="Noticia 1"
-        description="Esta es una nueva noticia de prueba"
+        description="Cinco siglos más tarde Lorem Ipsum experimentó una oleada de popularidad con el lanzamiento de hojas de transferencia seca de Letraset."
       />
     </div>
   );
