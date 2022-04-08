@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+:root {
+    --blue: #548CFF;
+    --white: #f7f7f7;
+}
+
 html {
     font-size: 10px
 }

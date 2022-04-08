@@ -1,10 +1,10 @@
 .header {
     width: 100%;
-    background-color: #548CFF;
+    background-color: var(--blue);
     position: fixed;
     flex-wrap: wrap;
     flex-grow: 0;
-    opacity: 0.5;
+    opacity: 0.8;
     position: fixed;
     z-index: 1;
 }
@@ -16,14 +16,14 @@
 .flex-container#logo-socialNetworks{
     justify-content: space-between;
     width: 100%;
-    transition: all 2s;
+    transition: all 1.5s;
 }
 
 .logo,
 .social-networks {
     display: inherit;
     align-items: center;
-    color: white;
+    color: var(--white);
     margin: 5px 90px 5px 90px;
 }
 
@@ -42,7 +42,7 @@
 .social-networks {
     flex-basis: 20%;
     justify-content: flex-end;
-    background-color: white;
+    background-color: var(--white);
     border-radius: 15px;
     justify-content: space-evenly;
     box-shadow: 5px 5px 5px black;
@@ -78,7 +78,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: white;
+    background-color: var(--white);
 }
 
 .mobnav-links,
@@ -101,6 +101,6 @@
 
 .mobnav-item:hover,
 .desknav-item:hover{
-    color: #548CFF;
+    color: var(--blue);
     font-weight: bolder;
 }
