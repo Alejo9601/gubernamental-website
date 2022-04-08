@@ -7,23 +7,13 @@ import MobileMenu from "./MobileMenu";
 import DesktopMenu from "./DesktopMenu";
 import useMobileObserver from "../hooks/useMobileObserver";
 import useScrollObserver from "../hooks/useScrollObserver";
-import { useEffect, useRef } from "react";
 
 const Header = () => {
   const isMobile = useMobileObserver();
   const isScrolled = useScrollObserver();
-  const header = useRef();
-
-  useEffect(() => {
-    if (isScrolled) {
-      header.current.className = "header emphasized";
-    } else {
-      header.current.className = "header";
-    }
-  }, [isScrolled]);
 
   return (
-    <header ref={header}>
+    <header className={isScrolled ? "header emphasized" : "header"}>
       <div className="flex-container" id="logo-socialNetworks">
         <picture className="logo">
           <source srcSet={logo} />
