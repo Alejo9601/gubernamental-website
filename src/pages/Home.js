@@ -14,6 +14,11 @@ const Home = () => {
         </div>
         <NewsSlider />
       </section>
+      <section className="section-content flex-container">
+        <div className="section-title" id="paperwork">
+          <h1>Tramites</h1>
+        </div>
+      </section>
     </>
   );
 };

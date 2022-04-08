@@ -7,7 +7,8 @@
     margin-top: 100px;
 }
 
-.section-title#latest-news-title h1{
+.section-title#latest-news-title h1,
+.section-title#paperwork h1{
     font-size: 3rem;
     font-weight: lighter;
 }
