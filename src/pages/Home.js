@@ -1,6 +1,7 @@
 import "../styles/home.css";
 import Carousel from "../components/Carousel";
 import NewsSlider from "../components/NewsSlider";
+import PaperworkGrid from "../components/PaperworkGrid";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <section className="section-content flex-container">
         <div className="section-title" id="paperwork">
           <h1>Tramites</h1>
+          <PaperworkGrid />
         </div>
       </section>
     </>

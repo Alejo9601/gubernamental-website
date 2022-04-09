@@ -1,0 +1,23 @@
+.grid-container#paperwork{
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 25px 20px 25px 20px;
+    margin: 25px 50px 25px 50px;
+    /*max-width: 1280px;*/
+    width: 1280px;
+    background-color: beige;
+}
+
+.paperwork-item{
+    flex-direction: column;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    height: 120px;
+}
+
+.paperwork-title,
+.paperwork-description {
+    width: 80%;
+}

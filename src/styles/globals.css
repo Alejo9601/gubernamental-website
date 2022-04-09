@@ -26,6 +26,10 @@ body{
     align-items: center;
 }
 
+.grid-container {
+    display: grid;
+}
+
 p,
 li,
 h1,
