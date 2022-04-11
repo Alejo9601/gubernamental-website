@@ -10,13 +10,13 @@
 }
 
 html {
-    font-size: 10px
+    font-size: 10px;
+    font-family: "Roboto", sans-serif;
 }
 
 body{
-    min-height: 1200px;
-    min-width: 100vw;
-    overflow-x: hidden;
+    min-height: 100vh;
+    max-width: 100%;
 }
 
 .flex-container {
@@ -31,6 +31,7 @@ body{
 }
 
 .section-content {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,7 +51,7 @@ h3 {
     font-size: 1.7rem;
 }
 
-p,
+/* p,
 a,
 li,
 h1,
@@ -61,4 +62,4 @@ h5,
 h6, 
 .refButton{
   font-family: "Roboto", sans-serif;
-}
+} */

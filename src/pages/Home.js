@@ -2,6 +2,7 @@ import "../styles/home.css";
 import Carousel from "../components/Carousel";
 import NewsSlider from "../components/NewsSlider";
 import PaperworkGrid from "../components/PaperworkGrid";
+import Contact from "../components/Contact";
 
 const Home = () => {
   return (
@@ -20,6 +21,9 @@ const Home = () => {
           <h1>Tramites</h1>
         </div>
         <PaperworkGrid />
+      </section>
+      <section className="section-content" id="contact">
+        <Contact />
       </section>
     </>
   );
