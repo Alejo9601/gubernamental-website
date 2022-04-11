@@ -8,16 +8,44 @@
 }
 
 .paperwork-item{
-    flex-direction: column;
+    flex-direction: row;
     border: 1px solid lightgrey;
     border-radius: 10px;
     margin: 20px;
     padding: 20px;
     background-color: white;
-    height: 120px;
+    height: 110px;
+    cursor: pointer;
 }
 
-.paperwork-title,
+.paperwork-item:hover {
+    background-color: var(--light_gray)
+}
+
+.description-container{
+    display: inherit;
+    flex-direction: column;
+}
+
+.paperwork-icon {
+    display: inherit;
+    align-content: flex-start;
+    height: 100%;
+}
+
+.paperwork-icon img {
+    height: 45px;
+    width: auto;
+}
+
+.paperwork-title {
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 5px 25px 5px 10px;
+}
+
 .paperwork-description {
-    width: 80%;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5px 25px 5px 25px;
 }
