@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import "../styles/carousel.css";
+import "../styles/homeCarousel.css";
 
 const Carousel = () => {
   const images = ["inicio.jpg", "el_chalten.jpg", "glaciares.jpg"];

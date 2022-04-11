@@ -30,6 +30,24 @@ body{
     display: grid;
 }
 
+.section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-title {
+    margin-top: 100px;
+}
+
+.section-title,
+.section-title{
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+
 p,
 li,
 h1,
