@@ -4,7 +4,6 @@
     margin: 25px 50px 25px 50px;
     /*max-width: 1280px;*/
     width: 1280px;
-    background-color: beige;
 }
 
 .paperwork-item{
@@ -39,7 +38,6 @@
 }
 
 .paperwork-title {
-    font-size: 1.7rem;
     text-align: center;
     padding: 5px 25px 5px 10px;
 }

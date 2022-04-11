@@ -6,7 +6,7 @@ const PaperworkItem = ({ title, description, image}) => {
         <img alt="paperwork" />
       </picture>
       <div className="description-container"> 
-        <h2 className="paperwork-title">{title}</h2>
+        <h3 className="paperwork-title">{title}</h3>
         <p className="paperwork-description">{description}</p>
       </div>
     </div>

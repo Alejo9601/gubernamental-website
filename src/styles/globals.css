@@ -41,14 +41,17 @@ body{
     margin-top: 100px;
 }
 
-.section-title,
-.section-title{
-    font-size: 3rem;
-    font-weight: lighter;
+h1 {
+    font-size: 4rem;
+    font-weight: 500;
 }
 
+h3 {
+    font-size: 1.7rem;
+}
 
 p,
+a,
 li,
 h1,
 h2,
