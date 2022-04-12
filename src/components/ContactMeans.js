@@ -1,17 +1,21 @@
 import whatsapp from "../assets/icon/whatsapp.png";
 import email from "../assets/icon/email.png";
 
-const ContactMeans = ({ img1, img2 }) => {
+const ContactMeans = () => {
   return (
-    <div className="flex-container" id="contact-means">
-      <h3>O Contactanos directamente a estos medios</h3>
+    <div className="grid-container" id="contact-means">
+      <h3>O CONTACTANOS DIRECTAMENTE A ESTOS MEDIOS</h3>
       <picture className="img-container" id="whatsapp">
         <source srcSet={whatsapp} />
         <img alt="whatsapp" />
+        <p>(+54) 2902 - 484801</p>
       </picture>
       <picture className="img-container" id="email">
         <source srcSet={email} />
         <img alt="email" />
+        <p>
+          municipalidad28nov <br></br>@gmail.com
+        </p>
       </picture>
     </div>
   );
