@@ -14,6 +14,7 @@ const NewsSlider = () => {
   const handlePrev = () => {
     // console.log("prev");
     // console.log(cardsCarousel.current);
+    cardsCarousel.current.style.transform = "translate(-300px)";
   };
 
   return (

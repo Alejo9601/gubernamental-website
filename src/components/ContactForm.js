@@ -21,10 +21,14 @@ const ConsultForm = () => {
         placeholder="Introduzca su correo electronico"
         name="email"
       />
-      <textarea className="consult" rows="10" cols="20" wrap="soft">
-        Redacte su mensaje...
-      </textarea>
-      <input className="send-data" type="submit" value="Enviar" />
+      <textarea
+        className="consult"
+        rows="10"
+        cols="20"
+        wrap="soft"
+        value="Redacte su mensaje ..."
+      />
+      <input className="send-data" type="submit" defaultValue="Enviar" />
     </form>
   );
 };
