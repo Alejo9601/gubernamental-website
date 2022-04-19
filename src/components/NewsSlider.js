@@ -6,11 +6,11 @@ const NewsSlider = () => {
   const cardsCarousel = useRef();
 
   const handleNext = () => {
-    cardsCarousel.current.style.transform = "translate(500px)";
+    cardsCarousel.current.style.transform = "translate(510px)";
   };
 
   const handlePrev = () => {
-    cardsCarousel.current.style.transform = "translate(-500px)";
+    cardsCarousel.current.style.transform = "translate(-510px)";
   };
 
   return (
@@ -18,13 +18,13 @@ const NewsSlider = () => {
       <div className="section-title" id="latest-news-title">
         <h1>Ultimas Novedades</h1>
       </div>
-      <div className="prev-card" onClick={handlePrev}>
+      <div className="prev-card" onClick={handleNext}>
         {`<`}
       </div>
       <div className="flex-container" id="news-slider">
         <div ref={cardsCarousel} className="flex-container" id="cards-carousel">
           <NewsCard
-            className="first-news"
+            id="first-card"
             newstitle="Noticia 1"
             description="Cinco siglos más tarde Lorem Ipsum experimentó una oleada de popularidad con el lanzamiento de hojas de transferencia seca de Letraset."
           />
@@ -45,13 +45,13 @@ const NewsSlider = () => {
             description="Cinco siglos más tarde Lorem Ipsum experimentó una oleada de popularidad con el lanzamiento de hojas de transferencia seca de Letraset."
           />
           <NewsCard
-            className="last-news"
+            id="last-card"
             newstitle="Noticia 6"
             description="Cinco siglos más tarde Lorem Ipsum experimentó una oleada de popularidad con el lanzamiento de hojas de transferencia seca de Letraset."
           />
         </div>
       </div>
-      <div className="next-card" onClick={handleNext}>
+      <div className="next-card" onClick={handlePrev}>
         {`>`}
       </div>
     </section>

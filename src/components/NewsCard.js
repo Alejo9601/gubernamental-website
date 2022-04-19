@@ -1,9 +1,9 @@
 import cerroCruz from "../assets/img/cerro.jpg";
 import RefButton from "./RefButton";
 
-const NewsCard = ({ newstitle, description }) => {
+const NewsCard = ({ newstitle, description, id }) => {
   return (
-    <div className="flex-container" id="card">
+    <div className="flex-container card" id={id}>
       <picture className="img-container" id="news-image">
         <source srcSet={cerroCruz} />
         <img alt="Noticia" />
