@@ -13,7 +13,7 @@ const Home = () => {
       <NewsSlider />
       <section className="section-content">
         <div className="section-title" id="paperwork">
-          <h1>Tramites</h1>
+          <h1>Paperwork</h1>
         </div>
         <PaperworkGrid />
       </section>

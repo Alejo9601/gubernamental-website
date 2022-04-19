@@ -24,8 +24,8 @@ const Header = () => {
           <source srcSet={logo} />
           <img id="logo" alt="logo" />
           <p className="img-description" id="logo-description">
-            Municipalidad <br />
-            28 de Noviembre
+            Gubernamental <br />
+            Institution
           </p>
         </picture>
         <div className="social-networks">
