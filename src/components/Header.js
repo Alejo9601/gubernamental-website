@@ -29,6 +29,7 @@ const Header = () => {
           </p>
         </picture>
         <div className="social-networks">
+          <h3>Follow us on</h3>
           <img src={facebook} alt="facebook" />
           <img src={twitter} alt="Twitter" />
           <img src={instagram} alt="Instagram" />
