@@ -1,16 +1,29 @@
+.section-content#latest-news {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.section-title#latest-news-title {
+  width: 100%;
+  text-align: center;
+}
+
 .flex-container#news-slider {
   padding: 25px 20px 25px 20px;
   margin: 25px 50px 25px 50px;
   justify-content: space-evenly;
   align-items: center;
   /*background-color: var(--white);*/
-  max-width: 1280px;
+  max-width: 1000px;
   overflow: hidden;
+  position: relative;
 }
 
 .flex-container#cards-carousel {
-  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
   background-color: var(--gray);
+  transition: transform 2s ease;
 }
 
 .flex-container#card {
@@ -86,6 +99,13 @@
   margin: 5px 10px 5px 10px;
   font-weight: bold;
   color: var(--blue);
+}
+
+.slider-buttons {
+  display: inherit;
+  position: absolute;
+  width: 500px;
+  justify-content: space-between;
 }
 
 .prev-card,

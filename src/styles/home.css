@@ -1,10 +1,11 @@
 .section-content#contact {
-    margin-top: 50px;
-    padding-bottom: 30px;
-    background-color: #EBF0F6;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    /* box-shadow: 0px 5px 15px 0px black; */
+  flex-direction: row;
+  margin-top: 50px;
+  padding-bottom: 30px;
+  background-color: #ebf0f6;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  /* box-shadow: 0px 5px 15px 0px black; */
 }

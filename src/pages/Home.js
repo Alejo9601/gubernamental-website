@@ -10,12 +10,7 @@ const Home = () => {
       <section className="section-content" id="home">
         <Carousel />
       </section>
-      <section className="section-content" id="latest-news">
-        <div className="section-title" id="latest-news-title">
-          <h1>Ultimas Novedades</h1>
-        </div>
-        <NewsSlider />
-      </section>
+      <NewsSlider />
       <section className="section-content">
         <div className="section-title" id="paperwork">
           <h1>Tramites</h1>

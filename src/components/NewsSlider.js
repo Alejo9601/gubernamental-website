@@ -6,54 +6,55 @@ const NewsSlider = () => {
   const cardsCarousel = useRef();
 
   const handleNext = () => {
-    // console.log("next");
-    // console.log(cardsCarousel.current);
-    cardsCarousel.current.style.transform = "translate(300px)";
+    cardsCarousel.current.style.transform = "translate(500px)";
   };
 
   const handlePrev = () => {
-    // console.log("prev");
-    // console.log(cardsCarousel.current);
-    cardsCarousel.current.style.transform = "translate(-300px)";
+    cardsCarousel.current.style.transform = "translate(-500px)";
   };
 
   return (
-    <div className="flex-container" id="news-slider">
+    <section className="section-content" id="latest-news">
+      <div className="section-title" id="latest-news-title">
+        <h1>Ultimas Novedades</h1>
+      </div>
       <div className="prev-card" onClick={handlePrev}>
         {`<`}
       </div>
-      <div ref={cardsCarousel} className="flex-container" id="cards-carousel">
-        <NewsCard
-          className="first-news"
-          newstitle="Noticia 1"
-          description="Cinco siglos más tarde Lorem Ipsum experimentó una oleada de popularidad con el lanzamiento de hojas de transferencia seca de Letraset."
-        />
-        <NewsCard
-          newstitle="Noticia 1"
-          description="Cinco siglos más tarde Lorem Ipsum experimentó una oleada de popularidad con el lanzamiento de hojas de transferencia seca de Letraset."
-        />
-        <NewsCard
-          newstitle="Noticia 1"
-          description="Cinco siglos más tarde Lorem Ipsum experimentó una oleada de popularidad con el lanzamiento de hojas de transferencia seca de Letraset."
-        />
-        <NewsCard
-          newstitle="Noticia 1"
-          description="Cinco siglos más tarde Lorem Ipsum experimentó una oleada de popularidad con el lanzamiento de hojas de transferencia seca de Letraset."
-        />
-        <NewsCard
-          newstitle="Noticia 1"
-          description="Cinco siglos más tarde Lorem Ipsum experimentó una oleada de popularidad con el lanzamiento de hojas de transferencia seca de Letraset."
-        />
-        <NewsCard
-          className="last-news"
-          newstitle="Noticia 1"
-          description="Cinco siglos más tarde Lorem Ipsum experimentó una oleada de popularidad con el lanzamiento de hojas de transferencia seca de Letraset."
-        />
+      <div className="flex-container" id="news-slider">
+        <div ref={cardsCarousel} className="flex-container" id="cards-carousel">
+          <NewsCard
+            className="first-news"
+            newstitle="Noticia 1"
+            description="Cinco siglos más tarde Lorem Ipsum experimentó una oleada de popularidad con el lanzamiento de hojas de transferencia seca de Letraset."
+          />
+          <NewsCard
+            newstitle="Noticia 2"
+            description="Cinco siglos más tarde Lorem Ipsum experimentó una oleada de popularidad con el lanzamiento de hojas de transferencia seca de Letraset."
+          />
+          <NewsCard
+            newstitle="Noticia 3"
+            description="Cinco siglos más tarde Lorem Ipsum experimentó una oleada de popularidad con el lanzamiento de hojas de transferencia seca de Letraset."
+          />
+          <NewsCard
+            newstitle="Noticia 4"
+            description="Cinco siglos más tarde Lorem Ipsum experimentó una oleada de popularidad con el lanzamiento de hojas de transferencia seca de Letraset."
+          />
+          <NewsCard
+            newstitle="Noticia 5"
+            description="Cinco siglos más tarde Lorem Ipsum experimentó una oleada de popularidad con el lanzamiento de hojas de transferencia seca de Letraset."
+          />
+          <NewsCard
+            className="last-news"
+            newstitle="Noticia 6"
+            description="Cinco siglos más tarde Lorem Ipsum experimentó una oleada de popularidad con el lanzamiento de hojas de transferencia seca de Letraset."
+          />
+        </div>
       </div>
       <div className="next-card" onClick={handleNext}>
         {`>`}
       </div>
-    </div>
+    </section>
   );
 };
 
