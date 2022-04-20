@@ -37,24 +37,46 @@ const news = [
 ];
 
 const NewsSlider = () => {
-  const cardsCarousel = useRef();
-  const initPos = useRef();
+  const slider = useRef();
+  const currPosition = useRef();
 
   useEffect(() => {
-    initPos.current = 0;
-    handleSlide(false);
+    currPosition.current = 0;
+    renderSlide();
   }, []);
 
+  const renderSlide = () => {
+    const cardWidth = 340;
+    const cardsDisplayed = window.innerWidth > 1280 ? 3 : 2;
+    const sliderStep = cardWidth * cardsDisplayed;
+    const firstSlideStep = sliderStep / 2;
+
+    slider.current.style.transform = `translate(${
+      currPosition.current + firstSlideStep
+    }px)`;
+
+    currPosition.current = currPosition.current + sliderStep;
+  };
+
   const handleSlide = (next) => {
-    const displacement = 510;
-    const maxSlide = next ? -displacement : displacement; //-510px
-    if (initPos.current !== maxSlide) {
-      cardsCarousel.current.style.transform = `translate(${
-        next ? initPos.current - displacement : initPos.current + displacement
+    const cardWidth = 340;
+    const cardsDisplayed = window.innerWidth > 1280 ? 3 : 2;
+    const sliderStep = cardWidth * cardsDisplayed;
+
+    const sliderLimit = next
+      ? -sliderStep * cardsDisplayed
+      : sliderStep * cardsDisplayed;
+
+    console.log(sliderStep);
+
+    if (currPosition.current !== sliderLimit) {
+      slider.current.style.transform = `translate(${
+        next ? -sliderStep + 510 : sliderStep - 510
       }px)`;
-      initPos.current = next
-        ? initPos.current - displacement
-        : initPos.current + displacement;
+      currPosition.current = next
+        ? currPosition.current - sliderStep
+        : currPosition.current + sliderStep;
+      console.log("entre a modificar y modifique");
     }
   };
 
@@ -67,7 +89,7 @@ const NewsSlider = () => {
         {`<`}
       </div>
       <div className="flex-container" id="news-slider">
-        <div ref={cardsCarousel} className="flex-container" id="cards-carousel">
+        <div ref={slider} className="flex-container" id="cards-carousel">
           <NewsCard
             id="first-card"
             newstitle={news[0].newsTitle}
