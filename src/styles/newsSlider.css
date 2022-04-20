@@ -23,7 +23,7 @@
 .flex-container#cards-carousel {
   display: flex;
   justify-content: space-around;
-  transition: transform 2s ease;
+  transition: transform 1s ease;
 }
 
 .card {
@@ -131,4 +131,10 @@
 
 .next-card {
   padding-left: 10px;
+}
+
+@media (max-width: 1280px) {
+  .flex-container#news-slider {
+    max-width: 640px;
+  }
 }

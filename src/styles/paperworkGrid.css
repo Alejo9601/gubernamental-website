@@ -1,49 +1,56 @@
-.grid-container#paperwork{
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 25px 20px 25px 20px;
-    margin: 25px 50px 25px 50px;
-    /*max-width: 1280px;*/
-    width: 1280px;
+.grid-container#paperwork {
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 25px 20px 25px 20px;
+  margin: 25px 50px 25px 50px;
+  /*max-width: 1280px;*/
+  width: 1280px;
 }
 
-.paperwork-item{
-    flex-direction: row;
-    border: 1px solid lightgrey;
-    border-radius: 10px;
-    margin: 20px;
-    padding: 20px;
-    background-color: white;
-    height: 110px;
-    cursor: pointer;
+.paperwork-item {
+  flex-direction: row;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  height: 110px;
+  cursor: pointer;
 }
 
 .paperwork-item:hover {
-    background-color: var(--light_gray)
+  background-color: var(--light_gray);
 }
 
-.description-container{
-    display: inherit;
-    flex-direction: column;
+.description-container {
+  display: inherit;
+  flex-direction: column;
 }
 
 .paperwork-icon {
-    display: inherit;
-    align-content: flex-start;
-    height: 100%;
+  display: inherit;
+  align-content: flex-start;
+  height: 100%;
 }
 
 .paperwork-icon img {
-    height: 45px;
-    width: auto;
+  height: 45px;
+  width: auto;
 }
 
 .paperwork-title {
-    text-align: center;
-    padding: 5px 25px 5px 10px;
+  text-align: center;
+  padding: 5px 25px 5px 10px;
 }
 
 .paperwork-description {
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 5px 25px 5px 25px;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 5px 25px 5px 25px;
+}
+
+@media (max-width: 1280px) {
+  .grid-container#paperwork {
+    grid-template-columns: 1fr 1fr;
+    width: 860px;
+  }
 }

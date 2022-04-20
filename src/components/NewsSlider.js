@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import "../styles/newsSlider.css";
 import NewsCard from "./NewsCard";
 import TrimParagraph from "../helpers/TrimParagraph";
@@ -38,13 +38,24 @@ const news = [
 
 const NewsSlider = () => {
   const cardsCarousel = useRef();
+  const initPos = useRef();
 
-  const handleNext = () => {
-    cardsCarousel.current.style.transform = "translate(510px)";
-  };
+  useEffect(() => {
+    initPos.current = 0;
+    handleSlide(false);
+  }, []);
 
-  const handlePrev = () => {
-    cardsCarousel.current.style.transform = "translate(-510px)";
+  const handleSlide = (next) => {
+    const displacement = 510;
+    const maxSlide = next ? -displacement : displacement; //-510px
+    if (initPos.current !== maxSlide) {
+      cardsCarousel.current.style.transform = `translate(${
+        next ? initPos.current - displacement : initPos.current + displacement
+      }px)`;
+      initPos.current = next
+        ? initPos.current - displacement
+        : initPos.current + displacement;
+    }
   };
 
   return (
@@ -52,7 +63,7 @@ const NewsSlider = () => {
       <div className="section-title" id="latest-news-title">
         <h1>Latest News</h1>
       </div>
-      <div className="prev-card" onClick={handleNext}>
+      <div className="prev-card" onClick={() => handleSlide(false)}>
         {`<`}
       </div>
       <div className="flex-container" id="news-slider">
@@ -85,7 +96,7 @@ const NewsSlider = () => {
           />
         </div>
       </div>
-      <div className="next-card" onClick={handlePrev}>
+      <div className="next-card" onClick={() => handleSlide(true)}>
         {`>`}
       </div>
     </section>
