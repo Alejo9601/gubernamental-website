@@ -49,7 +49,6 @@ const NewsSlider = () => {
       currPosition.current - step
     }px)`;
     currPosition.current = currPosition.current - step;
-    console.log(currPosition.current);
   };
 
   const slidePrev = (step) => {
@@ -57,7 +56,6 @@ const NewsSlider = () => {
       currPosition.current + step
     }px)`;
     currPosition.current = currPosition.current + step;
-    console.log(currPosition.current);
   };
 
   const handleSlide = (next) => {
@@ -66,13 +64,9 @@ const NewsSlider = () => {
     const cardsDisplayed = window.innerWidth > 1280 ? 3 : 2;
     const sliderStep = cardWidth * cardsDisplayed; //step of 1020 or 680
 
-    //Limit of 1020 or
     const sliderLimit = next ? -sliderStep * (cards / cardsDisplayed - 1) : 0;
 
-    console.log("before", currPosition);
-
     if (currPosition.current !== sliderLimit) {
-      console.log("con este valor entre", currPosition);
       next ? slideNext(sliderStep) : slidePrev(sliderStep);
     }
   };
