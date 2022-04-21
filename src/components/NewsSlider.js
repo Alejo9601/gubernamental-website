@@ -42,41 +42,38 @@ const NewsSlider = () => {
 
   useEffect(() => {
     currPosition.current = 0;
-    renderSlide();
   }, []);
 
-  const renderSlide = () => {
-    const cardWidth = 340;
-    const cardsDisplayed = window.innerWidth > 1280 ? 3 : 2;
-    const sliderStep = cardWidth * cardsDisplayed;
-    const firstSlideStep = sliderStep / 2;
-
+  const slideNext = (step) => {
     slider.current.style.transform = `translate(${
-      currPosition.current + firstSlideStep
+      currPosition.current - step
     }px)`;
+    currPosition.current = currPosition.current - step;
+    console.log(currPosition.current);
+  };
 
-    currPosition.current = currPosition.current + sliderStep;
+  const slidePrev = (step) => {
+    slider.current.style.transform = `translate(${
+      currPosition.current + step
+    }px)`;
+    currPosition.current = currPosition.current + step;
+    console.log(currPosition.current);
   };
 
   const handleSlide = (next) => {
+    const cards = 6;
     const cardWidth = 340;
     const cardsDisplayed = window.innerWidth > 1280 ? 3 : 2;
-    const sliderStep = cardWidth * cardsDisplayed;
+    const sliderStep = cardWidth * cardsDisplayed; //step of 1020 or 680
 
-    const sliderLimit = next
-      ? -sliderStep * cardsDisplayed
-      : sliderStep * cardsDisplayed;
+    //Limit of 1020 or
+    const sliderLimit = next ? -sliderStep * (cards / cardsDisplayed - 1) : 0;
 
-    console.log(sliderStep);
+    console.log("before", currPosition);
 
     if (currPosition.current !== sliderLimit) {
-      slider.current.style.transform = `translate(${
-        next ? -sliderStep + 510 : sliderStep - 510
-      }px)`;
-      currPosition.current = next
-        ? currPosition.current - sliderStep
-        : currPosition.current + sliderStep;
-      console.log("entre a modificar y modifique");
+      console.log("con este valor entre", currPosition);
+      next ? slideNext(sliderStep) : slidePrev(sliderStep);
     }
   };
 

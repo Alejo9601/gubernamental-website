@@ -9,9 +9,8 @@
 }
 
 .flex-container#news-slider {
-  padding: 0px 20px 0px 20px;
-  margin: 0px 50px 0px 50px;
-  justify-content: space-evenly;
+  margin: 50px;
+  justify-content: flex-start;
   align-items: center;
   /*background-color: var(--white);*/
   max-width: 1000px;
@@ -23,7 +22,19 @@
 .flex-container#cards-carousel {
   display: flex;
   justify-content: space-around;
+  transform-origin: left;
   transition: transform 1s ease;
+  margin: 0;
+  padding: 0px;
+}
+
+/*Just for the first item
+
+  also works .flex-container:first-child
+
+*/
+#first-card {
+  margin-left: 10px;
 }
 
 .card {
@@ -36,14 +47,6 @@
   border-radius: 10px;
   margin: 20px;
   overflow: hidden;
-}
-
-.card#first-card {
-  margin-left: 40px;
-}
-
-.card#last-card {
-  margin-right: 40px;
 }
 
 .img-container#news-image {
@@ -135,6 +138,6 @@
 
 @media (max-width: 1280px) {
   .flex-container#news-slider {
-    max-width: 640px;
+    max-width: 660px;
   }
 }
