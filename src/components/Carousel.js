@@ -30,17 +30,19 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="img-container" id="carousel">
-      <img
-        src={require(`../assets/img/${images[imgIndex]}`)}
-        alt="carousel"
-        className={imgLoaded ? "img-loaded" : "img-in-loading"}
-        onLoad={() => {
-          setImgLoaded(true);
-        }}
-      />
-      <div className="dark-overlay"></div>
-    </div>
+    <section className="section-content" id="home">
+      <div className="img-container" id="carousel">
+        <img
+          src={require(`../assets/img/${images[imgIndex]}`)}
+          alt="carousel"
+          className={imgLoaded ? "img-loaded" : "img-in-loading"}
+          onLoad={() => {
+            setImgLoaded(true);
+          }}
+        />
+        <div className="dark-overlay"></div>
+      </div>
+    </section>
   );
 };
 
