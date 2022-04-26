@@ -4,7 +4,7 @@ import email from "../assets/icon/email.png";
 const ContactMeans = () => {
   return (
     <div className="grid-container" id="contact-means">
-      <h3>O CONTACTANOS DIRECTAMENTE A ESTOS MEDIOS</h3>
+      <h3>OR CONTACT US THROUGH THESE MEANS</h3>
       <picture className="img-container" id="whatsapp">
         <source srcSet={whatsapp} />
         <img alt="whatsapp" />

@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import Gallery from "./pages/Gallery";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Government from "./pages/Government";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/government" element={<Government />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="*" element={<Home />} />
         </Routes>
