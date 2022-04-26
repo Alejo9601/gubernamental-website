@@ -52,15 +52,7 @@ h3 {
   font-size: 1.7rem;
 }
 
-/* p,
-a,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6, 
-.refButton{
-  font-family: "Roboto", sans-serif;
-} */
+a {
+  text-decoration: none;
+  color: var(--gray);
+}

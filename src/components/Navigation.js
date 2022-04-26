@@ -1,17 +1,10 @@
+import "../styles/navbar.css";
 import NavigationLink from "./NavigationLink";
 
 const Navegation = ({ isMobile }) => {
-  const mobileClasses = {
-    navLink: "mobnav-links",
-  };
-
-  const desktopClasses = {
-    navLink: "desknav-links",
-  };
-
   return (
     <>
-      <ul className={isMobile ? mobileClasses.navLink : desktopClasses.navLink}>
+      <ul className={isMobile ? "mobnav-links" : "desknav-links"}>
         <NavigationLink isMobile={isMobile} refTo="/home" textValue="Home" />
         <NavigationLink
           isMobile={isMobile}
@@ -33,12 +26,6 @@ const Navegation = ({ isMobile }) => {
           refTo="/gallery"
           textValue="Gallery"
         />
-        {/* <NavigationLink isMobile={isMobile} refTo="/" textValue="Gallery" />
-        <NavigationLink
-          isMobile={isMobile}
-          refTo="section5"
-          textValue="Contact"
-        /> */}
       </ul>
     </>
   );
