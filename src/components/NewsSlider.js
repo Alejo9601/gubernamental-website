@@ -2,6 +2,7 @@ import { useRef, useEffect } from "react";
 import "../styles/newsSlider.css";
 import NewsCard from "./NewsCard";
 import TrimParagraph from "../helpers/TrimParagraph";
+import RefButton from "./RefButton";
 
 const news = [
   {
@@ -112,6 +113,7 @@ const NewsSlider = () => {
       <div className="next-card" onClick={() => handleSlide(true)}>
         {`>`}
       </div>
+      <RefButton reference={""} btnText="View all news"></RefButton>
     </section>
   );
 };

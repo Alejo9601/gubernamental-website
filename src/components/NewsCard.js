@@ -1,5 +1,5 @@
 import cerroCruz from "../assets/img/cerro.jpg";
-import RefButton from "./RefButton";
+import RefButtonCard from "./RefButtonCard";
 
 const NewsCard = ({ newstitle, description, id }) => {
   return (
@@ -11,7 +11,7 @@ const NewsCard = ({ newstitle, description, id }) => {
       <div className="flex-container" id="description">
         <h2 className="news-title">{newstitle}</h2>
         <p className="news-description">{description}</p>
-        <RefButton reference={null} btnText="Ver mas ..." />
+        <RefButtonCard reference={null} btnText="Ver mas ..." />
       </div>
     </div>
   );
