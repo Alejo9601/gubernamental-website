@@ -2,7 +2,7 @@ import ImagesGrid from "../components/ImagesGrid";
 
 const Gallery = () => {
   return (
-    <section>
+    <section className="section-content">
       <ImagesGrid />
     </section>
   );
