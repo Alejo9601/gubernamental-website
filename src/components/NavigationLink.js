@@ -1,4 +1,4 @@
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const NavigationLink = ({ isMobile, refTo, textValue }) => {
   const mobileClasses = {
@@ -12,14 +12,7 @@ const NavigationLink = ({ isMobile, refTo, textValue }) => {
   return (
     <>
       <li className={isMobile ? mobileClasses.navItem : desktopClasses.navItem}>
-        <Link
-          to={refTo}
-          smooth="true"
-          style={{ cursor: "pointer" }}
-          offset={-100}
-        >
-          {textValue}
-        </Link>
+        <Link to={refTo}>{textValue}</Link>
       </li>
     </>
   );
