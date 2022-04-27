@@ -3,7 +3,7 @@ import email from "../assets/icon/email.png";
 
 const ContactMeans = () => {
   return (
-    <div className="grid-container" id="contact-means">
+    <div className="grid-container" id="contact-grid">
       <h3>OR CONTACT US THROUGH THESE MEANS</h3>
       <picture className="img-container" id="whatsapp">
         <source srcSet={whatsapp} />

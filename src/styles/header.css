@@ -15,7 +15,7 @@
 .flex-container#logo-socialNetworks {
   justify-content: space-between;
   width: 100%;
-  transition: all 1.5s;
+  transition: all 1.2s;
 }
 
 .logo,
@@ -24,18 +24,6 @@
   align-items: center;
   color: var(--white);
   margin: 5px 90px 5px 90px;
-}
-
-.non-displayed {
-  opacity: 0;
-  max-height: 0;
-  background-color: black;
-  overflow: hidden;
-}
-
-.displayed {
-  opacity: 1;
-  max-height: 200px;
 }
 
 .social-networks {
@@ -73,8 +61,20 @@
   padding: 0px 20px 0px 0px;
 }
 
-.img-description#logo-description {
+.logo p {
   font-size: 2rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
+}
+
+.non-displayed {
+  opacity: 0;
+  max-height: 0;
+  background-color: black;
+  overflow: hidden;
+}
+
+.displayed {
+  opacity: 1;
+  max-height: 200px;
 }

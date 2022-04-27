@@ -1,8 +1,5 @@
 import "../styles/header.css";
-import logo from "../assets/icon/prov-santacruz.png";
-import facebook from "../assets/icon/facebook.png";
-import instagram from "../assets/icon/instagram.png";
-import twitter from "../assets/icon/twitter.png";
+import imgUrl from "../assets/json/imgUrls.json";
 import MobileMenu from "./MobileMenu";
 import DesktopMenu from "./DesktopMenu";
 import useMobileObserver from "../hooks/useMobileObserver";
@@ -21,18 +18,27 @@ const Header = () => {
         id="logo-socialNetworks"
       >
         <picture className="logo">
-          <source srcSet={logo} />
-          <img id="logo" alt="logo" />
-          <p className="img-description" id="logo-description">
+          <source srcSet={require(`../assets/icon/${imgUrl.logo}`)} />
+          <img alt="Page Logo" />
+          <p>
             Gubernamental <br />
             Institution
           </p>
         </picture>
         <div className="social-networks">
           <h3>Follow us on</h3>
-          <img src={facebook} alt="facebook" />
-          <img src={twitter} alt="Twitter" />
-          <img src={instagram} alt="Instagram" />
+          <img
+            src={require(`../assets/icon/${imgUrl.facebook}`)}
+            alt="facebook"
+          />
+          <img
+            src={require(`../assets/icon/${imgUrl.twitter}`)}
+            alt="Twitter"
+          />
+          <img
+            src={require(`../assets/icon/${imgUrl.instagram}`)}
+            alt="Instagram"
+          />
         </div>
       </div>
       <nav className="flex-container navbar">

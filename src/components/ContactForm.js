@@ -1,5 +1,3 @@
-import "../styles/contactForm.css";
-
 const ConsultForm = () => {
   return (
     <form>
@@ -22,7 +20,7 @@ const ConsultForm = () => {
         name="email"
       />
       <textarea
-        className="consult"
+        className="query"
         rows="10"
         cols="20"
         wrap="soft"
