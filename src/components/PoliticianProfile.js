@@ -17,19 +17,24 @@ const PoliticianProfile = () => {
         </div>
         <div className="flex-container" id="contact-info">
           <p>
-            <span> Direccion: </span>
+            <span> Address: </span>
             <br></br>
             {politician[0].address}
           </p>
           <p>
-            <span> Nro. de Telefono: </span>
+            <span> Phone Number: </span>
             <br></br>
             {politician[0].phoneNumber}
           </p>
           <p>
-            <span> email: </span>
+            <span> E-Mail: </span>
             <br></br>
             {politician[0].email}
+          </p>
+          <p>
+            <span> Zip-Code: </span>
+            <br></br>
+            {politician[0].zipCode}
           </p>
         </div>
       </div>

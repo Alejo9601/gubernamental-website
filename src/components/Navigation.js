@@ -5,21 +5,25 @@ const Navegation = ({ isMobile }) => {
   return (
     <ul className={isMobile ? "mobnav-links" : "desknav-links"}>
       <NavigationLink isMobile={isMobile} refTo="/home" textValue="Home" />
+
       <NavigationLink
         isMobile={isMobile}
         refTo="/government"
         textValue="Government"
       />
+
       <NavigationLink
         isMobile={isMobile}
         refTo="/urbanization"
         textValue="Urbanization"
       />
+
       <NavigationLink
         isMobile={isMobile}
-        refTo="/paperwork"
-        textValue="Paperwork"
+        refTo="/procedures"
+        textValue="Procedures"
       />
+
       <NavigationLink
         isMobile={isMobile}
         refTo="/gallery"

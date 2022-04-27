@@ -1,6 +1,7 @@
 .grid-container#politician-grid {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
+  height: 100%;
 }
 
 .politician-img {
@@ -25,8 +26,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin: 30px 50px 50px 50px;
-  padding: 20px;
+  margin: 0px 50px 0px 50px;
+  padding: 20px 0px 20px 0px;
 }
 
 /* .container#biography h1 {
