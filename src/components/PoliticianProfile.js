@@ -1,31 +1,35 @@
 import "../styles/politicianProfile.css";
+import politician from "../assets/json/politicianProfile.json";
 
 const PoliticianProfile = () => {
   return (
     <section className="section-content" id="politician-profile">
       <div className="grid-container" id="politician-grid">
         <picture className="flex-container politician-img">
-          <source srcSet={require("../assets/img/man.png")} />
+          <source srcSet={require("../assets/img/yo.jpg")} />
           <img alt="politician" />
         </picture>
-        <div className="container" id="biography">
-          <h1>Fullname of the politician</h1>
-          <p>
-            Laborum anim cupidatat amet tempor incididunt aute cillum. Minim
-            officia cillum eiusmod id dolore id excepteur aute cillum aute
-            tempor magna. Sint nostrud elit ex id quis commodo aliquip aute id
-            consequat minim culpa sunt. Consequat eu id pariatur reprehenderit
-            laboris veniam aliqua amet.
-          </p>
+        <div className="flex-container" id="biography">
+          <h2>{politician[0].charge}</h2>
+          <h1>{politician[0].fullname}</h1>
+          <p>{`Asumes in his charge on ${politician[0].dateOfAsumption}`}</p>
+          <p>{politician[0].biography}</p>
         </div>
-        <div className="container" id="contact-info">
-          <h1>Fullname of the politician</h1>
+        <div className="flex-container" id="contact-info">
           <p>
-            Laborum anim cupidatat amet tempor incididunt aute cillum. Minim
-            officia cillum eiusmod id dolore id excepteur aute cillum aute
-            tempor magna. Sint nostrud elit ex id quis commodo aliquip aute id
-            consequat minim culpa sunt. Consequat eu id pariatur reprehenderit
-            laboris veniam aliqua amet.
+            <span> Direccion: </span>
+            <br></br>
+            {politician[0].address}
+          </p>
+          <p>
+            <span> Nro. de Telefono: </span>
+            <br></br>
+            {politician[0].phoneNumber}
+          </p>
+          <p>
+            <span> email: </span>
+            <br></br>
+            {politician[0].email}
           </p>
         </div>
       </div>
