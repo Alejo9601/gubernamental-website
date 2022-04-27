@@ -39,7 +39,7 @@ const Carousel = () => {
           ipsum est exercitation culpa cillum incididunt commodo dolor ea eu.
         </p>
       </div>
-      <div className="img-container" id="carousel">
+      <picture className="img-container" id="carousel">
         <img
           src={require(`../assets/img/${images[imgIndex]}`)}
           alt="carousel"
@@ -49,7 +49,7 @@ const Carousel = () => {
           }}
         />
         <div className="dark-overlay"></div>
-      </div>
+      </picture>
     </section>
   );
 };

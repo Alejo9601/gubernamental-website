@@ -69,11 +69,10 @@ form {
   font-size: 1.7rem;
   font-weight: 600;
   text-align: center;
+  padding: 0px 15px 15px 15px;
 }
 
 .img-container#whatsapp img,
-p,
-.img-container#email img,
-p {
+.img-container#email img {
   padding: 0px 15px 15px 15px;
 }
