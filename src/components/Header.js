@@ -2,11 +2,12 @@ import "../styles/header.css";
 import iconUrl from "../assets/json/iconUrl.json";
 import MobileMenu from "./MobileMenu";
 import DesktopMenu from "./DesktopMenu";
-import useMobileObserver from "../hooks/useMobileObserver";
 import useScrollObserver from "../hooks/useScrollObserver";
+import { useContext } from "react";
+import MobileContext from "../context/MobileContext";
 
 const Header = () => {
-  const isMobile = useMobileObserver();
+  const isMobile = useContext(MobileContext);
   const isScrolled = useScrollObserver();
 
   return (
