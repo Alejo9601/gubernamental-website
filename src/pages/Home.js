@@ -1,7 +1,7 @@
 import "../styles/home.css";
 import Carousel from "../components/Carousel";
 import NewsSlider from "../components/NewsSlider";
-import PaperworkGrid from "../components/PaperworkGrid";
+import Procedures from "../components/Procedures";
 import Contact from "../components/Contact";
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
     <>
       <Carousel />
       <NewsSlider />
-      <PaperworkGrid />
+      <Procedures />
       <Contact />
     </>
   );

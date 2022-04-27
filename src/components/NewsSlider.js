@@ -52,28 +52,28 @@ const NewsSlider = () => {
         <div ref={slider} className="flex-container" id="cards-carousel">
           <NewsCard
             id="first-card"
-            newstitle={newsCard[0].newsTitle}
+            newsTitle={newsCard[0].newsTitle}
             description={TrimParagraph(newsCard[0].newsParagraph, 130)}
           />
           <NewsCard
-            newstitle={newsCard[1].newsTitle}
+            newsTitle={newsCard[1].newsTitle}
             description={TrimParagraph(newsCard[1].newsParagraph, 130)}
           />
           <NewsCard
-            newstitle={newsCard[2].newsTitle}
+            newsTitle={newsCard[2].newsTitle}
             description={TrimParagraph(newsCard[2].newsParagraph, 130)}
           />
           <NewsCard
-            newstitle={newsCard[3].newsTitle}
+            newsTitle={newsCard[3].newsTitle}
             description={TrimParagraph(newsCard[3].newsParagraph, 130)}
           />
           <NewsCard
-            newstitle={newsCard[4].newsTitle}
+            newsTitle={newsCard[4].newsTitle}
             description={TrimParagraph(newsCard[4].newsParagraph, 130)}
           />
           <NewsCard
             id="last-card"
-            newstitle={newsCard[5].newsTitle}
+            newsTitle={newsCard[5].newsTitle}
             description={TrimParagraph(newsCard[5].newsParagraph, 130)}
           />
         </div>

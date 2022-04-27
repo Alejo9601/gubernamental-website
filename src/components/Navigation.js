@@ -3,31 +3,29 @@ import NavigationLink from "./NavigationLink";
 
 const Navegation = ({ isMobile }) => {
   return (
-    <>
-      <ul className={isMobile ? "mobnav-links" : "desknav-links"}>
-        <NavigationLink isMobile={isMobile} refTo="/home" textValue="Home" />
-        <NavigationLink
-          isMobile={isMobile}
-          refTo="/government"
-          textValue="Government"
-        />
-        <NavigationLink
-          isMobile={isMobile}
-          refTo="/urbanization"
-          textValue="Urbanization"
-        />
-        <NavigationLink
-          isMobile={isMobile}
-          refTo="/paperwork"
-          textValue="Paperwork"
-        />
-        <NavigationLink
-          isMobile={isMobile}
-          refTo="/gallery"
-          textValue="Gallery"
-        />
-      </ul>
-    </>
+    <ul className={isMobile ? "mobnav-links" : "desknav-links"}>
+      <NavigationLink isMobile={isMobile} refTo="/home" textValue="Home" />
+      <NavigationLink
+        isMobile={isMobile}
+        refTo="/government"
+        textValue="Government"
+      />
+      <NavigationLink
+        isMobile={isMobile}
+        refTo="/urbanization"
+        textValue="Urbanization"
+      />
+      <NavigationLink
+        isMobile={isMobile}
+        refTo="/paperwork"
+        textValue="Paperwork"
+      />
+      <NavigationLink
+        isMobile={isMobile}
+        refTo="/gallery"
+        textValue="Gallery"
+      />
+    </ul>
   );
 };
 

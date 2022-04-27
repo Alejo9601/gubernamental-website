@@ -1,4 +1,4 @@
-.grid-container#paperwork {
+.grid-container#procedures-grid {
   grid-template-columns: 1fr 1fr 1fr;
   padding: 25px 20px 25px 20px;
   margin: 25px 50px 25px 50px;
@@ -6,7 +6,7 @@
   width: 1280px;
 }
 
-.paperwork-item {
+.procedure-item {
   flex-direction: row;
   border: 1px solid lightgrey;
   border-radius: 10px;
@@ -17,7 +17,7 @@
   cursor: pointer;
 }
 
-.paperwork-item:hover {
+.procedure-item:hover {
   background-color: var(--light_gray);
 }
 
@@ -26,30 +26,30 @@
   flex-direction: column;
 }
 
-.paperwork-icon {
+.procedure-icon {
   display: inherit;
   align-content: flex-start;
   height: 100%;
 }
 
-.paperwork-icon img {
+.procedure-icon img {
   height: 45px;
   width: auto;
 }
 
-.paperwork-title {
+.procedure-title {
   text-align: center;
   padding: 5px 25px 5px 10px;
 }
 
-.paperwork-description {
+.procedure-description {
   font-size: 1.5rem;
   text-align: center;
   padding: 5px 25px 5px 25px;
 }
 
 @media (max-width: 1280px) {
-  .grid-container#paperwork {
+  .grid-container#procedure {
     grid-template-columns: 1fr 1fr;
     width: 860px;
   }
