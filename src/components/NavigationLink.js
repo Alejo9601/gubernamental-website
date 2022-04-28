@@ -5,6 +5,7 @@ const NavigationLink = ({ setDisplay, isMobile, refTo, textValue }) => {
     <li
       className={isMobile ? "mobnav-item" : "desknav-item"}
       onMouseEnter={() => setDisplay(true)}
+      onMouseLeave={() => setDisplay(false)}
     >
       <Link className="anchor" to={refTo}>
         {textValue}

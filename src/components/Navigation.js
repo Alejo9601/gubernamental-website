@@ -17,35 +17,35 @@ const Navegation = ({ isMobile }) => {
       }
     >
       <NavigationLink
-        display={setDisplay}
+        setDisplay={setDisplay}
         isMobile={isMobile}
         refTo="/home"
         textValue="Home"
       />
 
       <NavigationLink
-        display={setDisplay}
+        setDisplay={setDisplay}
         isMobile={isMobile}
         refTo="/government"
         textValue="Government"
       />
 
       <NavigationLink
-        display={setDisplay}
+        setDisplay={setDisplay}
         isMobile={isMobile}
         refTo="/urbanization"
         textValue="Urbanization"
       />
 
       <NavigationLink
-        display={setDisplay}
+        setDisplay={setDisplay}
         isMobile={isMobile}
         refTo="/procedures"
         textValue="Procedures"
       />
 
       <NavigationLink
-        display={setDisplay}
+        setDisplay={setDisplay}
         isMobile={isMobile}
         refTo="/gallery"
         textValue="Gallery"
