@@ -1,6 +1,7 @@
 .section-content#latest-news {
   flex-direction: row;
   flex-wrap: wrap;
+  background-color: brown;
 }
 
 .section-title#latest-news-title {
@@ -130,6 +131,7 @@
 /*RefButton under the slider */
 .ref-button {
   width: 100%;
+  background-color: transparent;
 }
 
 .ref-button #background-color-container {

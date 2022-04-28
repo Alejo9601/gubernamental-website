@@ -3,8 +3,8 @@ import "../styles/procedures.css";
 
 const Procedures = () => {
   return (
-    <section className="section-content">
-      <div className="section-title" id="procedures">
+    <section className="section-content" id="procedures">
+      <div className="section-title">
         <h1>Procedures</h1>
       </div>
       <div className="grid-container" id="procedures-grid">

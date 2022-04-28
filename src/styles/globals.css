@@ -23,7 +23,7 @@ body {
 .App {
   display: flex;
   flex-direction: column;
-  height: 100vh; /*MIN-HEIGHT NO funciona*/
+  height: 100vh;
 }
 
 .flex-container {
@@ -38,7 +38,6 @@ body {
 }
 
 .section-content {
-  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
