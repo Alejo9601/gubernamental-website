@@ -1,13 +1,12 @@
-import NavigationLink from "./NavigationLink";
+import { Link } from "react-router-dom";
 
 const SubmenuGovernment = ({ display }) => {
   return (
-    <ol className={display ? "submenu active" : "submenu"}>
-      <NavigationLink refTo={"/profile"} />
-      <NavigationLink refTo={"/profile"} />
-      <NavigationLink refTo={"/profile"} />
-      <NavigationLink refTo={"/profile"} />
-      <NavigationLink refTo={"/profile"} />
+    <ol className={display ? "submenu active" : "submenu inactive"}>
+      <Link to="/government">Intendente</Link>
+      <Link to="/government">Intendente</Link>
+      <Link to="/government">Intendente</Link>
+      <Link to="/government">Intendente</Link>
     </ol>
   );
 };

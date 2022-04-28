@@ -1,6 +1,10 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import SubmenuGovernment from "./SubmenuGovernment";
 
-const NavigationLink = ({ setDisplay, isMobile, refTo, textValue }) => {
+const NavigationLink = ({ isMobile, refTo, textValue }) => {
+  const [display, setDisplay] = useState(false);
+
   return (
     <li
       className={isMobile ? "mobnav-item" : "desknav-item"}
@@ -10,6 +14,7 @@ const NavigationLink = ({ setDisplay, isMobile, refTo, textValue }) => {
       <Link className="anchor" to={refTo}>
         {textValue}
       </Link>
+      <SubmenuGovernment display={display}></SubmenuGovernment>
     </li>
   );
 };
