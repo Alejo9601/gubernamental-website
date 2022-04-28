@@ -27,18 +27,20 @@ const Header = () => {
           </p>
         </picture>
         <div className="social-networks">
-          <h3>Follow us on</h3>
           <img
             src={require(`../assets/icon/${iconUrl.facebook}`)}
             alt="facebook"
+            id="facebook"
           />
           <img
             src={require(`../assets/icon/${iconUrl.twitter}`)}
             alt="Twitter"
+            id="twitter"
           />
           <img
             src={require(`../assets/icon/${iconUrl.instagram}`)}
             alt="Instagram"
+            id="instagram"
           />
         </div>
       </div>
