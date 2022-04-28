@@ -2,7 +2,7 @@ import NavigationLink from "./NavigationLink";
 
 const SubmenuGovernment = ({ display }) => {
   return (
-    <ol className={display ? "displayed" : "non-displayed"}>
+    <ol className={display ? "submenu active" : "submenu"}>
       <NavigationLink refTo={"/profile"} />
       <NavigationLink refTo={"/profile"} />
       <NavigationLink refTo={"/profile"} />

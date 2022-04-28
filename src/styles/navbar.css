@@ -13,6 +13,10 @@
   background-color: aqua;
 }
 
+.navigation {
+  position: relative;
+}
+
 .mobnav-links,
 .desknav-links {
   list-style: none;
@@ -36,4 +40,19 @@
   font-weight: bold;
   text-decoration-line: underline;
   text-decoration-thickness: 5px;
+}
+
+.submenu {
+  opacity: 0;
+  display: none;
+  position: absolute;
+  background-color: aqua;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+}
+
+.submenu.active {
+  opacity: 1;
+  display: block;
 }

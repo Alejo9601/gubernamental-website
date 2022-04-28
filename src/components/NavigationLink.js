@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 
-const NavigationLink = ({ isMobile, refTo, textValue }) => {
+const NavigationLink = ({ setDisplay, isMobile, refTo, textValue }) => {
   return (
-    <li className={isMobile ? "mobnav-item" : "desknav-item"}>
+    <li
+      className={isMobile ? "mobnav-item" : "desknav-item"}
+      onMouseEnter={() => setDisplay(true)}
+    >
       <Link className="anchor" to={refTo}>
         {textValue}
       </Link>
