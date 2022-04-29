@@ -11,12 +11,14 @@ const Navegation = ({ isMobile }) => {
       <NavigationLink isMobile={isMobile} refTo="/home" textValue="Home" />
 
       <NavigationLink
+        submenu={true}
         isMobile={isMobile}
         refTo="/government"
         textValue="Government"
       />
 
       <NavigationLink
+        submenu={true}
         isMobile={isMobile}
         refTo="/urbanization"
         textValue="Urbanization"

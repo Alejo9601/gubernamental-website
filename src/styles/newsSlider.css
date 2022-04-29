@@ -1,7 +1,6 @@
 .section-content#latest-news {
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: brown;
 }
 
 .section-title#latest-news-title {

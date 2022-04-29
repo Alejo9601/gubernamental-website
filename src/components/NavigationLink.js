@@ -1,20 +1,30 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import SubmenuGovernment from "./SubmenuGovernment";
+import Submenu from "./Submenu";
+import { check_for_hover } from "../helpers/CheckForHover";
 
-const NavigationLink = ({ isMobile, refTo, textValue }) => {
+const NavigationLink = ({ isMobile, refTo, textValue, submenu }) => {
   const [display, setDisplay] = useState(false);
 
   return (
     <li
       className={isMobile ? "mobnav-item" : "desknav-item"}
       onMouseEnter={() => setDisplay(true)}
-      onMouseLeave={() => setDisplay(false)}
+      // onMouseLeave={() => {
+      //   setTimeout(() => {
+      //     if (check_for_hover() === false) {
+      //       setDisplay(false);
+      //     }
+      //   }, 100);
+      // }}
     >
       <Link className="anchor" to={refTo}>
         {textValue}
       </Link>
-      <SubmenuGovernment display={display}></SubmenuGovernment>
+
+      {submenu ? (
+        <Submenu setDisplay={setDisplay} display={display}></Submenu>
+      ) : null}
     </li>
   );
 };
