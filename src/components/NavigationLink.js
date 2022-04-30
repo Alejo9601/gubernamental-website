@@ -1,29 +1,26 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import Submenu from "./Submenu";
-import { check_for_hover } from "../helpers/CheckForHover";
+import ScreenWidthContext from "../context/ScreenWidthContext";
 
-const NavigationLink = ({ isMobile, refTo, textValue, submenu }) => {
-  const [display, setDisplay] = useState(false);
+const NavigationLink = ({ refTo, textValue, submenu }) => {
+  const [displaySubmenu, setDisplaySubmenu] = useState(false);
+  const isMobileWidth = useContext(ScreenWidthContext);
 
   return (
     <li
-      className={isMobile ? "mobnav-item" : "desknav-item"}
-      onMouseEnter={() => setDisplay(true)}
-      // onMouseLeave={() => {
-      //   setTimeout(() => {
-      //     if (check_for_hover() === false) {
-      //       setDisplay(false);
-      //     }
-      //   }, 100);
-      // }}
+      className={isMobileWidth ? "mobnav-item" : "desknav-item"}
+      onMouseEnter={() => setDisplaySubmenu(true)}
     >
       <Link className="anchor" to={refTo}>
         {textValue}
       </Link>
 
       {submenu ? (
-        <Submenu setDisplay={setDisplay} display={display}></Submenu>
+        <Submenu
+          setDisplay={setDisplaySubmenu}
+          display={displaySubmenu}
+        ></Submenu>
       ) : null}
     </li>
   );

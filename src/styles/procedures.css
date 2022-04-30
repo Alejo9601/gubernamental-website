@@ -57,3 +57,17 @@
     width: 860px;
   }
 }
+
+@media (max-width: 900px) {
+  .grid-container#procedures-grid {
+    grid-template-columns: 1fr 1fr;
+    width: 800px;
+  }
+}
+
+@media (max-width: 800px) {
+  .grid-container#procedures-grid {
+    grid-template-columns: 1fr;
+    width: 450px;
+  }
+}

@@ -1,40 +1,34 @@
+import { useContext } from "react";
+import ScreenWidthContext from "../context/ScreenWidthContext";
 import "../styles/navbar.css";
 import NavigationLink from "./NavigationLink";
 
-const Navegation = ({ isMobile }) => {
+const Navegation = () => {
+  const isMobileWidth = useContext(ScreenWidthContext);
+
   return (
     <ul
       className={
-        isMobile ? "navigation mobnav-links" : "navigation desknav-links"
+        isMobileWidth ? "navigation mobnav-links" : "navigation desknav-links"
       }
     >
-      <NavigationLink isMobile={isMobile} refTo="/home" textValue="Home" />
+      <NavigationLink refTo="/home" textValue="Home" />
 
       <NavigationLink
         submenu={true}
-        isMobile={isMobile}
         refTo="/government"
         textValue="Government"
       />
 
       <NavigationLink
         submenu={true}
-        isMobile={isMobile}
         refTo="/urbanization"
         textValue="Urbanization"
       />
 
-      <NavigationLink
-        isMobile={isMobile}
-        refTo="/procedures"
-        textValue="Procedures"
-      />
+      <NavigationLink refTo="/procedures" textValue="Procedures" />
 
-      <NavigationLink
-        isMobile={isMobile}
-        refTo="/gallery"
-        textValue="Gallery"
-      />
+      <NavigationLink refTo="/gallery" textValue="Gallery" />
     </ul>
   );
 };

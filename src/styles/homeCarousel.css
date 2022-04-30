@@ -62,3 +62,23 @@
   font-size: 2.5rem;
   line-height: 2.5rem;
 }
+
+@media (max-width: 1280px) {
+  .home-description {
+    position: absolute;
+    flex-direction: column;
+    width: 600px;
+    top: 40%;
+    left: 5%;
+    z-index: 2;
+  }
+
+  .title-home {
+    font-size: 5rem;
+  }
+
+  .home-paragraph {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}

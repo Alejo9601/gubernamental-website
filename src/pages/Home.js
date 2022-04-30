@@ -1,4 +1,3 @@
-import "../styles/home.css";
 import Carousel from "../components/Carousel";
 import NewsSlider from "../components/NewsSlider";
 import Procedures from "../components/Procedures";

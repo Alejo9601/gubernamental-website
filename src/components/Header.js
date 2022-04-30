@@ -3,11 +3,10 @@ import iconUrl from "../assets/json/iconUrl.json";
 import MobileMenu from "./MobileMenu";
 import DesktopMenu from "./DesktopMenu";
 import useScrollObserver from "../hooks/useScrollObserver";
-import { useContext } from "react";
-import MobileContext from "../context/MobileContext";
+import ScreenWidthContext, { useContext } from "react";
 
 const Header = () => {
-  const isMobile = useContext(MobileContext);
+  const isMobileWidth = useContext(ScreenWidthContext);
   const isScrolled = useScrollObserver();
 
   return (
@@ -44,8 +43,9 @@ const Header = () => {
           />
         </div>
       </div>
+
       <nav className="flex-container navbar">
-        {isMobile ? <MobileMenu /> : <DesktopMenu />}
+        {isMobileWidth ? <MobileMenu /> : <DesktopMenu />}
       </nav>
     </header>
   );

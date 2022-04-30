@@ -5,12 +5,15 @@ import Footer from "./components/Footer";
 import Gallery from "./pages/Gallery";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Government from "./pages/Government";
+import { ScreenWidthProvider } from "./context/ScreenWidthContext";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Header />
+        <ScreenWidthProvider>
+          <Header />
+        </ScreenWidthProvider>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/government" element={<Government />} />
