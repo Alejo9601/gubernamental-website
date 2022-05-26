@@ -38,7 +38,6 @@
 
 .anchor:hover {
   color: var(--blue);
-  font-weight: bold;
 }
 
 .submenu {
@@ -49,11 +48,16 @@
   justify-content: space-evenly;
   position: absolute;
   z-index: inherit;
-  background-color: var(--white);
+  background-color: var(--gray);
   position: absolute;
   top: 100%;
 }
 
+.submenu a:hover {
+  background-color: var(--blue);
+}
+
 .submenu a {
   padding: 5px;
+  color: var(--white);
 }
