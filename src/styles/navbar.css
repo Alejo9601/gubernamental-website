@@ -53,11 +53,16 @@
   top: 100%;
 }
 
-.submenu a:hover {
+.submenu li:hover {
   background-color: var(--blue);
 }
 
-.submenu a {
+.submenu li {
+  list-style: none;
   padding: 5px;
+  color: var(--white);
+}
+
+.submenu li a {
   color: var(--white);
 }

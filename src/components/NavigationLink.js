@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import ScreenWidthContext from "../context/ScreenWidthContext";
 import SubmenuGovernment from "./SubmenuGovernment";
 
-const NavigationLink = ({ refTo, textValue, submenu }) => {
+const NavigationLink = ({ refTo = "", textValue, submenu = [] }) => {
   const isMobileWidth = useContext(ScreenWidthContext);
 
   return (
@@ -15,7 +15,7 @@ const NavigationLink = ({ refTo, textValue, submenu }) => {
       >
         {textValue}
       </Link>
-      {submenu ? <SubmenuGovernment /> : null}
+      {submenu.length > 0 ? <SubmenuGovernment submenuItems={submenu} /> : null}
     </li>
   );
 };

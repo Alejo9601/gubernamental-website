@@ -1,12 +1,17 @@
 import { Link } from "react-router-dom";
 
-const SubmenuGovernment = () => {
+const SubmenuGovernment = ({ submenuItems }) => {
   return (
     <ol className="submenu">
-      <Link to="/government">Politician</Link>
-      <Link to="/government">Politician</Link>
-      <Link to="/government">Politician</Link>
-      <Link to="/government">Politician</Link>
+      {submenuItems.map((item) => {
+        return (
+          <li>
+            <Link to={`${item.baseUrl}/${item.politicianId}`}>
+              {item.politicianId}
+            </Link>
+          </li>
+        );
+      })}
     </ol>
   );
 };

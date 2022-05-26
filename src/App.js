@@ -16,7 +16,7 @@ function App() {
         </ScreenWidthProvider>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/government" element={<Government />} />
+          <Route path="/government/:politician" element={<Government />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="*" element={<Home />} />
         </Routes>

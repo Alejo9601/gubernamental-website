@@ -3,6 +3,13 @@ import ScreenWidthContext from "../context/ScreenWidthContext";
 import "../styles/navbar.css";
 import NavigationLink from "./NavigationLink";
 
+const SubmenuGovernment = [
+  { baseUrl: "/government", politicianId: "politician" },
+  { baseUrl: "/government", politicianId: "politician" },
+  { baseUrl: "/government", politicianId: "politician" },
+  { baseUrl: "/government", politicianId: "politician" },
+];
+
 const Navegation = () => {
   const isMobileWidth = useContext(ScreenWidthContext);
 
@@ -14,11 +21,7 @@ const Navegation = () => {
     >
       <NavigationLink refTo="/home" textValue="Home" />
 
-      <NavigationLink
-        submenu={true}
-        refTo="/government"
-        textValue="Government"
-      />
+      <NavigationLink submenu={SubmenuGovernment} textValue="Government" />
 
       <NavigationLink
         submenu={true}

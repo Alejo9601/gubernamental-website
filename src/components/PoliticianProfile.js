@@ -1,7 +1,10 @@
 import "../styles/politicianProfile.css";
 import politician from "../assets/json/politicianProfile.json";
+import { useParams } from "react-router-dom";
 
 const PoliticianProfile = () => {
+  const { politicianParam } = useParams();
+
   return (
     <section className="section-content" id="politician-profile">
       <div className="grid-container" id="politician-grid">
