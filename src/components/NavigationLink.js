@@ -4,24 +4,14 @@ import Submenu from "./Submenu";
 import ScreenWidthContext from "../context/ScreenWidthContext";
 
 const NavigationLink = ({ refTo, textValue, submenu }) => {
-  const [displaySubmenu, setDisplaySubmenu] = useState(false);
   const isMobileWidth = useContext(ScreenWidthContext);
 
   return (
-    <li
-      className={isMobileWidth ? "mobnav-item" : "desknav-item"}
-      onMouseEnter={() => setDisplaySubmenu(true)}
-    >
+    <li className={isMobileWidth ? "mobnav-item" : "desknav-item"}>
       <Link className="anchor" to={refTo}>
         {textValue}
       </Link>
-
-      {submenu ? (
-        <Submenu
-          setDisplay={setDisplaySubmenu}
-          display={displaySubmenu}
-        ></Submenu>
-      ) : null}
+      {submenu ? <Submenu /> : null}
     </li>
   );
 };

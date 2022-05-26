@@ -22,15 +22,18 @@
 
 .desknav-links {
   display: flex;
-  flex-direction: row;
 }
 
 .mobnav-item,
 .desknav-item {
-  margin: 10px 20px 10px 30px;
+  padding: 10px 20px 10px 30px;
   font-weight: lighter;
   opacity: 1;
   position: relative;
+}
+
+.desknav-item:hover > ol {
+  display: flex;
 }
 
 .anchor:hover {
@@ -41,34 +44,18 @@
 }
 
 .submenu {
-  display: flex;
+  display: none;
   flex-direction: column;
-  height: 150px;
+  height: fit-content;
   width: 150px;
   justify-content: space-evenly;
-  align-items: center;
   position: absolute;
-  overflow: hidden;
   z-index: inherit;
   background-color: var(--white);
   position: absolute;
-  top: 130%;
-  left: 0%;
-  transition: max-height 2s ease;
-}
-
-.submenu.inactive {
-  opacity: 0;
-  max-height: 0;
-  visibility: hidden;
-}
-
-.submenu.active {
-  opacity: 1;
-  max-height: 1000px;
-  visibility: visible;
+  top: 100%;
 }
 
 .submenu:hover {
   border: 0px dashed blue;
-}
+} 

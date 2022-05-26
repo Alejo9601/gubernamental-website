@@ -1,14 +1,8 @@
 import { Link } from "react-router-dom";
 
-const SubmenuGovernment = ({ setDisplay, display }) => {
+const SubmenuGovernment = () => {
   return (
-    <ol
-      // onMouseLeave={() => setDisplay(false)}
-      className={display ? "submenu active" : "submenu inactive"}
-      id="submenu-checkhover"
-      onClick={() => setDisplay(false)}
-      onMouseLeave={() => setDisplay(false)}
-    >
+    <ol className="submenu">
       <Link to="/government">Intendente</Link>
       <Link to="/government">Intendente</Link>
       <Link to="/government">Intendente</Link>
