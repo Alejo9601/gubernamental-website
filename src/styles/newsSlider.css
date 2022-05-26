@@ -46,7 +46,7 @@
   overflow: hidden;
 }
 
-#cards-carousel :first-child{
+.card:first-child {
   margin-left: 10px;
 }
 
