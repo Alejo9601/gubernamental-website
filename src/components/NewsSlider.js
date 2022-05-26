@@ -50,32 +50,14 @@ const NewsSlider = () => {
       </div>
       <div className="flex-container" id="news-slider">
         <div ref={slider} className="flex-container" id="cards-carousel">
-          <NewsCard
-            id="first-card"
-            newsTitle={newsCard[0].newsTitle}
-            description={TrimParagraph(newsCard[0].newsParagraph, 130)}
-          />
-          <NewsCard
-            newsTitle={newsCard[1].newsTitle}
-            description={TrimParagraph(newsCard[1].newsParagraph, 130)}
-          />
-          <NewsCard
-            newsTitle={newsCard[2].newsTitle}
-            description={TrimParagraph(newsCard[2].newsParagraph, 130)}
-          />
-          <NewsCard
-            newsTitle={newsCard[3].newsTitle}
-            description={TrimParagraph(newsCard[3].newsParagraph, 130)}
-          />
-          <NewsCard
-            newsTitle={newsCard[4].newsTitle}
-            description={TrimParagraph(newsCard[4].newsParagraph, 130)}
-          />
-          <NewsCard
-            id="last-card"
-            newsTitle={newsCard[5].newsTitle}
-            description={TrimParagraph(newsCard[5].newsParagraph, 130)}
-          />
+          {newsCard.map((news) => {
+            return (
+              <NewsCard
+                newsTitle={news.newsTitle}
+                description={TrimParagraph(news.newsParagraph, 130)}
+              />
+            );
+          })}
         </div>
       </div>
       <div className="next-card" onClick={() => handleSlide(true)}>

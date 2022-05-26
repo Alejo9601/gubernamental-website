@@ -33,9 +33,6 @@
   also works .flex-container:first-child
 
 */
-#first-card {
-  margin-left: 10px;
-}
 
 .card {
   flex-direction: column;
@@ -47,6 +44,10 @@
   border-radius: 10px;
   margin: 20px;
   overflow: hidden;
+}
+
+#cards-carousel :first-child{
+  margin-left: 10px;
 }
 
 .img-container#news-image {

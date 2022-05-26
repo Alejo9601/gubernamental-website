@@ -56,6 +56,6 @@
   top: 100%;
 }
 
-.submenu:hover {
-  border: 0px dashed blue;
-} 
+.submenu a {
+  padding: 5px;
+}
