@@ -39,8 +39,6 @@
 .anchor:hover {
   color: var(--blue);
   font-weight: bold;
-  text-decoration-line: underline;
-  text-decoration-thickness: 5px;
 }
 
 .submenu {
