@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const SubmenuGovernment = ({ submenuItems }) => {
+const Submenu = ({ submenuItems }) => {
   return (
     <ol className="submenu">
       {submenuItems.map((item) => {
@@ -16,4 +16,4 @@ const SubmenuGovernment = ({ submenuItems }) => {
   );
 };
 
-export default SubmenuGovernment;
+export default Submenu;
