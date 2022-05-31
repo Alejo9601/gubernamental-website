@@ -11,7 +11,7 @@ const NavigationLink = ({ refTo = "", textValue, submenu = [] }) => {
       <Link
         className="anchor"
         to={refTo}
-        style={submenu ? { cursor: "default" } : {}}
+        style={submenu.length !== 0 ? { cursor: "default" } : {}}
       >
         {textValue}
       </Link>
