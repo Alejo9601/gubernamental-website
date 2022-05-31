@@ -23,11 +23,7 @@ const Navegation = () => {
 
       <NavigationLink submenu={SubmenuGovernment} textValue="Government" />
 
-      <NavigationLink
-        submenu={true}
-        refTo="/urbanization"
-        textValue="Urbanization"
-      />
+      <NavigationLink refTo="/urbanization" textValue="Urbanization" />
 
       <NavigationLink refTo="/procedures" textValue="Procedures" />
 
