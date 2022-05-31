@@ -1,6 +1,10 @@
 const ConsultForm = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <input
         className="personal-data"
         type="text"
