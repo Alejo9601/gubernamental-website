@@ -8,19 +8,19 @@ const ConsultForm = () => {
       <input
         className="personal-data"
         type="text"
-        placeholder="Introduzca su nombre"
+        placeholder="Introduce your full name ..."
         name="name"
       />
       <input
         className="personal-data"
         type="text"
-        placeholder="Introduzca su apellido"
+        placeholder="What is the subject?"
         name="last-name"
       />
       <input
         className="personal-data"
         type="email"
-        placeholder="Introduzca su correo electronico"
+        placeholder="Introduce your e-mail ..."
         name="email"
       />
       <textarea
@@ -28,9 +28,9 @@ const ConsultForm = () => {
         rows="10"
         cols="20"
         wrap="soft"
-        value="Redacte su mensaje ..."
+        value="Write your message ..."
       />
-      <input className="send-data" type="submit" defaultValue="Enviar" />
+      <input className="send-data" type="submit" value="Submit" />
     </form>
   );
 };
