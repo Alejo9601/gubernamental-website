@@ -1,0 +1,13 @@
+.flex-container#burger-button {
+  height: 40px;
+  border: 1px solid;
+  background-color: black;
+  position: absolute;
+}
+
+.flex-container#burger-button span {
+  display: inherit;
+  background-color: white;
+  height: 5px;
+  width: 40px;
+}

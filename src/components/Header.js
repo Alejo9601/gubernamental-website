@@ -4,9 +4,10 @@ import MobileMenu from "./MobileMenu";
 import DesktopMenu from "./DesktopMenu";
 import useScrollObserver from "../hooks/useScrollObserver";
 import ScreenWidthContext, { useContext } from "react";
+import useMobileObserver from "../hooks/useMobileObserver";
 
 const Header = () => {
-  const isMobileWidth = useContext(ScreenWidthContext);
+  const isMobileWidth = useMobileObserver();
   const isScrolled = useScrollObserver();
 
   return (

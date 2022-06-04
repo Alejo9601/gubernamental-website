@@ -1,10 +1,9 @@
-import { useContext } from "react";
 import { Link } from "react-router-dom";
-import ScreenWidthContext from "../context/ScreenWidthContext";
+import useMobileObserver from "../hooks/useMobileObserver";
 import Submenu from "./Submenu";
 
 const NavigationLink = ({ refTo = "", textValue, submenu = [] }) => {
-  const isMobileWidth = useContext(ScreenWidthContext);
+  const isMobileWidth = useMobileObserver();
 
   return (
     <li className={isMobileWidth ? "mobnav-item" : "desknav-item"}>

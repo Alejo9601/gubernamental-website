@@ -1,5 +1,3 @@
-import { useContext } from "react";
-import ScreenWidthContext from "../context/ScreenWidthContext";
 import "../styles/navbar.css";
 import NavigationLink from "./NavigationLink";
 
@@ -10,9 +8,7 @@ const SubmenuGovernment = [
   { baseUrl: "/government", politicianId: "politician" },
 ];
 
-const Navegation = () => {
-  const isMobileWidth = useContext(ScreenWidthContext);
-
+const Navegation = ({ isMobileWidth }) => {
   return (
     <ul
       className={
