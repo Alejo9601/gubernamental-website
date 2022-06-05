@@ -89,3 +89,10 @@ form {
 .img-container#email img {
   padding: 0px 15px 15px 15px;
 }
+
+@media (max-width: 850px) {
+  .personal-data,
+  .query {
+    width: 500px;
+  }
+}
