@@ -1,15 +1,19 @@
 .flex-container#burger-button {
-  border: 1px solid;
   position: absolute;
   flex-direction: column;
-  right: 2%;
-  top: 12%;
+  right: 1%;
+  margin: 3px;
+}
+
+.flex-container#burger-button:hover {
+  border: 2px solid var(--blue);
+  border-radius: 3px;
 }
 
 .flex-container#burger-button span {
   display: inherit;
   background-color: black;
   height: 3px;
-  width: 20px;
-  margin: 2px;
+  width: 25px;
+  margin: 3px;
 }
