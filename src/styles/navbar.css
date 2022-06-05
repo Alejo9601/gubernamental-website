@@ -9,9 +9,9 @@
 
 /*On mobile phones*/
 #flex-mobile-menu {
-  width: 30px;
+  width: 100%;
   height: 30px;
-  background-color: aqua;
+  /* background-color: blue; */
   position: relative;
 }
 
