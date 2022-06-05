@@ -3,13 +3,13 @@
 }
 
 .grid-container#politician-grid {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   grid-template-rows: 1fr 1.5fr;
   height: 100%;
 }
 
 .politician-img {
-  margin-top: 10px;
+  margin-top: 80px;
   grid-column-end: span 2;
   height: 150px;
   background-color: var(--blue);
@@ -27,34 +27,43 @@
 .flex-container#biography,
 .flex-container#contact-info {
   /* background-color: aqua; */
-  flex-direction: column;
   justify-content: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
   align-items: flex-start;
-  margin: 0px 50px 0px 50px;
-  padding: 20px 0px 20px 0px;
-}
-
-/* .container#biography h1 {
-} */
-
-.flex-container#biography h2 {
-  color: var(--blue);
-  font-size: 3rem;
-  padding-bottom: 5px;
+  margin: 10px;
+  padding: 20px 80px;
 }
 
 .flex-container#biography p,
 .flex-container#contact-info p {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   padding-top: 20px;
   line-height: 2rem;
   text-align: left;
 }
 
-.flex-container#contact-info p {
-  padding-left: 100px;
+.flex-container#biography p {
+  padding-right: 100px;
+}
+
+.flex-container#biography p, h2 {
+  width: 100%;
+}
+
+.flex-container#biography h2 {
+  color: var(--blue);
+  font-size: 4rem;
+  padding-bottom: 5px;
+}
+
+.flex-container#contact-info p, span {
+  width: 100%;
 }
 
 .flex-container#contact-info span {
   font-weight: bold;
 }
+
+
+
