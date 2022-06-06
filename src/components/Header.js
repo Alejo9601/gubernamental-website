@@ -5,6 +5,7 @@ import DesktopMenu from "./DesktopMenu";
 import useScrollObserver from "../hooks/useScrollObserver";
 import useMobileObserver from "../hooks/useMobileObserver";
 import social from "../assets/json/data_social_networks.json";
+import SocialNetworks from "./SocialNetworks";
 
 const Header = () => {
   const isMobileWidth = useMobileObserver();
@@ -26,17 +27,7 @@ const Header = () => {
             Institution
           </p>
         </picture>
-        <div className="social-networks">
-          {social.map((socialNet) => {
-            return (
-              <img
-                src={require(`../assets/icon/${socialNet.img}`)}
-                alt={socialNet.name}
-                id={socialNet.name}
-              />
-            );
-          })}
-        </div>
+        <SocialNetworks></SocialNetworks>
       </div>
       <nav className="flex-container navbar">
         {isMobileWidth ? <MobileMenu /> : <DesktopMenu />}
