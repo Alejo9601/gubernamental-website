@@ -16,13 +16,9 @@ const Navigation = ({ isMobileWidth }) => {
       }
     >
       <NavigationLink refTo="/home" textValue="Home" />
-
       <NavigationLink submenu={SubmenuGovernment} textValue="Government" />
-
       <NavigationLink refTo="/urbanization" textValue="Urbanization" />
-
       <NavigationLink refTo="/procedures" textValue="Procedures" />
-
       <NavigationLink refTo="/gallery" textValue="Gallery" />
     </ul>
   );
