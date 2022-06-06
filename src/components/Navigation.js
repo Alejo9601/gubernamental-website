@@ -8,7 +8,7 @@ const SubmenuGovernment = [
   { baseUrl: "/government", politicianId: "politician" },
 ];
 
-const Navegation = ({ isMobileWidth }) => {
+const Navigation = ({ isMobileWidth }) => {
   return (
     <ul
       className={
@@ -28,4 +28,4 @@ const Navegation = ({ isMobileWidth }) => {
   );
 };
 
-export default Navegation;
+export default Navigation;
