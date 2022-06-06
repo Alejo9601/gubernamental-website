@@ -1,10 +1,10 @@
 import "../styles/header.css";
-import iconUrl from "../assets/json/iconUrl.json";
+import logo from "../assets/icon/prov-santacruz.png";
 import MobileMenu from "./MobileMenu";
 import DesktopMenu from "./DesktopMenu";
 import useScrollObserver from "../hooks/useScrollObserver";
-import ScreenWidthContext, { useContext } from "react";
 import useMobileObserver from "../hooks/useMobileObserver";
+import social from "../assets/json/data_social_networks.json";
 
 const Header = () => {
   const isMobileWidth = useMobileObserver();
@@ -19,7 +19,7 @@ const Header = () => {
         id="logo-socialNetworks"
       >
         <picture className="logo">
-          <source srcSet={require(`../assets/icon/${iconUrl.logo}`)} />
+          <source srcSet={logo} />
           <img alt="Page Logo" />
           <p>
             Gubernamental <br />
@@ -27,24 +27,17 @@ const Header = () => {
           </p>
         </picture>
         <div className="social-networks">
-          <img
-            src={require(`../assets/icon/${iconUrl.facebook}`)}
-            alt="facebook"
-            id="facebook"
-          />
-          <img
-            src={require(`../assets/icon/${iconUrl.twitter}`)}
-            alt="Twitter"
-            id="twitter"
-          />
-          <img
-            src={require(`../assets/icon/${iconUrl.instagram}`)}
-            alt="Instagram"
-            id="instagram"
-          />
+          {social.map((socialNet) => {
+            return (
+              <img
+                src={require(`../assets/icon/${socialNet.img}`)}
+                alt={socialNet.name}
+                id={socialNet.name}
+              />
+            );
+          })}
         </div>
       </div>
-
       <nav className="flex-container navbar">
         {isMobileWidth ? <MobileMenu /> : <DesktopMenu />}
       </nav>
