@@ -11,10 +11,7 @@ const MobileMenu = () => {
 
   return (
     <div className="flex-container" id="flex-mobile-menu">
-      {/* <div className="toggle-menu" onClick={useToggleMenu}>
-        <img alt="togle-menu" />
-      </div> */}
-      <BurgerButton></BurgerButton>
+      <BurgerButton toggleMenu={useToggleMenu}></BurgerButton>
       {showNav ? (
         <div
           className="flex-container generic-container"
