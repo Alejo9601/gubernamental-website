@@ -28,7 +28,7 @@ const ConsultForm = () => {
         rows="10"
         cols="20"
         wrap="soft"
-        value="Write your message ..."
+        defaultValue="Write your message ..."
       />
       <input className="send-data" type="submit" value="Submit" />
     </form>
