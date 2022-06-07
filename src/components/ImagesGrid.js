@@ -14,9 +14,9 @@ const ImagesGrid = () => {
   ];
   return (
     <div className="grid-container">
-      {images.map((image) => {
+      {images.map((image, index) => {
         return (
-          <picture className="img-container gallery">
+          <picture className="img-container gallery" key={index}>
             <source srcSet={require(`../assets/img/${image}`)} />
             <img alt="gallery" />
           </picture>

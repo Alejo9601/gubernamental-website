@@ -26,9 +26,10 @@ const NewsSlider = () => {
       </div>
       <div ref={sliderWrapper} className="flex-container" id="news-slider">
         <div ref={slider} className="flex-container" id="cards-carousel">
-          {newsCard.map((news) => {
+          {newsCard.map((news, index) => {
             return (
               <NewsCard
+                key={news.newsTitle.concat(index)}
                 newsTitle={news.newsTitle}
                 description={TrimParagraph(news.newsParagraph, 130)}
               />
