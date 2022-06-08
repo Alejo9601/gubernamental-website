@@ -10,11 +10,21 @@ const NewsSlider = () => {
   const slider = useRef();
   const sliderWrapper = useRef();
   const CARD_WIDTH = 340;
-  const { handleSlide, count } = useSliderHandler(
+  const { slide, count } = useSliderHandler(
     sliderWrapper,
     slider,
     CARD_WIDTH
   );
+
+  const handleSlide = (next) => {
+    if(!next) {
+      slide(false) 
+      return
+    }
+    if (count < newsCard.length) {
+      slide(true);
+    }
+  };
 
   return (
     <section className="section-content" id="latest-news">

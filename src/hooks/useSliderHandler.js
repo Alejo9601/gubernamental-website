@@ -13,14 +13,30 @@ const useSliderHandler = (sliderWrapper, slider, cardWidth) => {
     sliderPosition.current = 0;
   };
 
-  const slide = (next) => {
-    const step = cardWidth * cardsPerSlide();
+  const slideForward = (step) => {
     slider.current.style.transform = `translate(${
-      next ? sliderPosition.current - step : sliderPosition.current + step
+      sliderPosition.current - step
     }px)`;
-    sliderPosition.current = next
-      ? sliderPosition.current - step
-      : sliderPosition.current + step;
+    sliderPosition.current = sliderPosition.current - step
+    setCount(count + cardsPerSlide());
+  }
+
+  const slideBack = (step) => {
+    slider.current.style.transform = `translate(${
+      sliderPosition.current + step
+    }px)`;
+    sliderPosition.current = sliderPosition.current + step
+    setCount(count - cardsPerSlide());
+  }
+
+  const slide = (next) => {
+      const step = cardWidth * cardsPerSlide();
+      if(!next && sliderPosition.current < 0){
+        slideBack(step)
+        return
+      }
+      if(next) slideForward(step)
+      //must update count state here..
   };
 
   const wrapperWidth = () => {
@@ -41,7 +57,7 @@ const useSliderHandler = (sliderWrapper, slider, cardWidth) => {
     }
   };
 
-  return { handleSlide, count };
+  return { slide, count };
 };
 
 export default useSliderHandler;
