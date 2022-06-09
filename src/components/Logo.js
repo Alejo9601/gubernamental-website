@@ -5,10 +5,10 @@ const Logo = () => {
     <picture className="logo">
       <source srcSet={logo} />
       <img alt="Page Logo" />
-      <p>
+      <span>
         Gubernamental <br />
         Institution
-      </p>
+      </span>
     </picture>
   );
 };
