@@ -1,8 +1,19 @@
 import logo from "../assets/icon/prov-santacruz.png";
 
 const Logo = () => {
+  const handleClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
-    <picture className="logo">
+    <picture
+      onClick={handleClick}
+      className="logo"
+      style={{ cursor: "pointer" }}
+    >
       <source srcSet={logo} />
       <img alt="Page Logo" />
       <span>
