@@ -3,15 +3,27 @@
 }
 
 .grid-container#contacts-grid {
-  width: 1366px;
   align-self: center;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.flex-container#contact-item {
+  flex-direction: column;
+  margin: 50px 100px 0px 100px;
+}
+
+.contact-name,
+.contact-phone-number {
+  margin: 10px;
+  align-self: center;
 }
 
 .contact-phone-number {
   background-color: var(--blue);
   color: white;
   font-size: 2rem;
-  margin: 20px;
+  padding: 10px 30px;
   text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 5px;
 }
