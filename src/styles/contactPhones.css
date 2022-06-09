@@ -1,5 +1,33 @@
 .section-content#contacts {
-  height: 100vh;
+  align-self: center;
+  flex-grow: 1;
+  width: 80%;
+}
+
+.flex-container#title-description {
+  width: 100%;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.flex-container#title-description h1,
+.flex-container#title-description p {
+  margin-top: 100px;
+}
+
+.flex-container#title-description p {
+  font-size: 2rem;
+  padding-left: 200px;
+}
+
+.flex-container#title-description h1 {
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.flex-container#title-description span {
+  font-size: 2rem;
+  margin-top: 50px;
 }
 
 .grid-container#contacts-grid {
@@ -9,7 +37,7 @@
 
 .flex-container#contact-item {
   flex-direction: column;
-  margin: 50px 100px 0px 100px;
+  margin: 0px 100px 50px 100px;
 }
 
 .contact-name,

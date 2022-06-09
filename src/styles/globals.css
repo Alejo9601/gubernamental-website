@@ -5,6 +5,7 @@
 
 :root {
   --blue: #548cff;
+  --fontcolor: #40454c;
   --white: #fff;
   --light_gray: #f4f9f9;
   --gray: #414141;
@@ -61,4 +62,8 @@ h3 {
 a {
   text-decoration: none;
   color: var(--gray);
+}
+
+p {
+  color: var(--fontcolor);
 }
