@@ -1,0 +1,17 @@
+.section-content#contacts {
+  height: 100vh;
+}
+
+.grid-container#contacts-grid {
+  width: 1366px;
+  align-self: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contact-phone-number {
+  background-color: var(--blue);
+  color: white;
+  font-size: 2rem;
+  margin: 20px;
+  text-align: center;
+}
