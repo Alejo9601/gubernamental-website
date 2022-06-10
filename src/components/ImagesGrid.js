@@ -1,4 +1,5 @@
 import "../styles/gallery.css";
+import GalleryImage from "./GalleryImage";
 
 const ImagesGrid = () => {
   const images = [
@@ -16,10 +17,7 @@ const ImagesGrid = () => {
     <div className="grid-container">
       {images.map((image, index) => {
         return (
-          <picture className="img-container gallery" key={index}>
-            <source srcSet={require(`../assets/img/${image}`)} />
-            <img alt="gallery" />
-          </picture>
+          <GalleryImage key={index} image={image}/>
         );
       })}
     </div>
