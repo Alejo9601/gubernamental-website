@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Submenu from "./Submenu";
+import Submenu from "../../Submenu";
 
 const NavbarLink = ({ referenceTo = "", textValue, submenu = [] }) => {
   return (
