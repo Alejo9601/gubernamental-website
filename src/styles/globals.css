@@ -1,64 +1,65 @@
 * {
-  padding: 0;
-  margin: 0;
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
 }
 
 :root {
-  --blue: #548cff;
-  --white: #fff;
-  --light_gray: #f4f9f9;
-  --gray: #414141;
+   --blue: #548cff;
+   --white: #ffffff;
+   --light-gray: #d3d3d3;
+   --gray: #414141;
 }
 
 html {
-  font-size: 10px;
-  font-family: "Roboto", sans-serif;
+   font-size: 10px;
+   font-family: "Roboto", sans-serif;
 }
 
 body {
-  min-height: 100vh;
-  max-width: 100%;
+   min-height: 100vh;
+   max-width: 100%;
 }
 
 .App {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+   display: flex;
+   flex-direction: column;
+   min-height: 100dvh;
 }
 
 .flex-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
 }
 
 .grid-container {
-  display: grid;
+   display: grid;
 }
 
 .section-content {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 
 .section-title {
-  margin-top: 100px;
+   margin-top: 100px;
 }
 
 h1 {
-  font-size: 4rem;
-  font-weight: 500;
+   font-size: 4rem;
+   font-weight: 500;
 }
 
 h3 {
-  font-size: 1.7rem;
+   font-size: 1.7rem;
 }
 
 a {
-  text-decoration: none;
-  color: var(--gray);
+   text-decoration: none;
+   color: var(--gray);
 }
