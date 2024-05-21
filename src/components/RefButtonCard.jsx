@@ -1,19 +1,14 @@
+import More from "./SVGIcons/More";
+
 const RefButton = ({ reference, btnText }) => {
-  return (
-    <div className="flex-container ref-button-card">
-      <div className="btn-symbol" id="see-more">
-        <p className=""> {">"} </p>
+   return (
+      <div className="flex-container ref-button-card">
+         <a href={reference} target="_blank" rel="noreferrer noopener">
+            <p>{btnText}</p>
+            <More />
+         </a>
       </div>
-      <a
-        style={{ textDecoration: "none" }}
-        href={reference}
-        target="_blank"
-        rel="noreferrer noopener"
-      >
-        {btnText}
-      </a>
-    </div>
-  );
+   );
 };
 
 export default RefButton;

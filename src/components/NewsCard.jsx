@@ -10,7 +10,7 @@ const NewsCard = ({ newsTitle, description, id }) => {
       <div className="flex-container" id="description">
         <h2 className="news-title">{newsTitle}</h2>
         <p className="news-description">{description}</p>
-        <RefButtonCard reference={null} btnText="See more ..." />
+        <RefButtonCard reference={null} btnText="Ver mas" />
       </div>
     </div>
   );
