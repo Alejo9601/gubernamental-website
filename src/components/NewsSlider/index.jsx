@@ -1,11 +1,11 @@
 import { useRef, useEffect } from "react";
-import "../styles/newsSlider.css";
 import NewsCard from "./NewsCard";
-import TrimParagraph from "../helpers/TrimParagraph";
-import RefButton from "./RefButton";
-import newsCard from "../assets/json/newsCard.json";
-import RightArrow from "../components/SVGIcons/RightArrow";
-import LeftArrow from "../components/SVGIcons/LeftArrow";
+import TrimParagraph from "../../helpers/TrimParagraph";
+import RefButton from "../RefButton";
+import newsCard from "../../assets/json/newsCard.json";
+import RightArrow from "../SVGIcons/RightArrow";
+import LeftArrow from "../SVGIcons/LeftArrow";
+import "../../styles/newsSlider.css";
 
 const NewsSlider = () => {
    const slider = useRef();

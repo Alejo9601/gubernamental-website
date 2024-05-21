@@ -1,6 +1,6 @@
-import More from "./SVGIcons/More";
+import More from "../../SVGIcons/More";
 
-const RefButton = ({ reference, btnText }) => {
+const CardButton = ({ reference, btnText }) => {
    return (
       <div className="flex-container ref-button-card">
          <a href={reference} target="_blank" rel="noreferrer noopener">
@@ -11,4 +11,4 @@ const RefButton = ({ reference, btnText }) => {
    );
 };
 
-export default RefButton;
+export default CardButton;
