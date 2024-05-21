@@ -1,6 +1,7 @@
 .section-content#latest-news {
    flex-direction: row;
    flex-wrap: wrap;
+   width: 100%;
 }
 
 .section-title#latest-news-title {
@@ -12,11 +13,9 @@
    margin: 50px 20px 20px 20px;
    justify-content: flex-start;
    align-items: center;
-   /*background-color: var(--white);*/
    max-width: 1000px;
    overflow: hidden;
    border-radius: 15px;
-   background-color: var(--light-gray);
 }
 
 .flex-container#cards-carousel {
