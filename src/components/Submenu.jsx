@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Submenu = ({ submenuItems }) => {
   return (
-    <ol className="submenu">
+    <ul className="submenu">
       {submenuItems.map((item) => {
         return (
           <li>
@@ -12,7 +12,7 @@ const Submenu = ({ submenuItems }) => {
           </li>
         );
       })}
-    </ol>
+    </ul>
   );
 };
 

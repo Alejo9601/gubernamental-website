@@ -32,11 +32,9 @@ const Carousel = () => {
   return (
     <section className="section-content" id="home">
       <div className="flex-container home-description">
-        <h1 className="title-home">Gubernamental Name</h1>
+        <h1 className="title-home">Municipio de Veintiocho de Noviembre</h1>
         <p className="home-paragraph">
-          Ipsum et commodo non velit. Nostrud qui Lorem do voluptate fugiat in
-          esse.Ut dolore aliquip labore tempor laborum. Duis aliqua velit ea
-          ipsum est exercitation culpa cillum incididunt commodo dolor ea eu.
+          Página Oficial del ente gubernamental - Provincia de Santa Cruz, Argentina.
         </p>
       </div>
       <picture className="img-container" id="carousel">

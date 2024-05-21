@@ -13,7 +13,7 @@ const ImagesGrid = () => {
     "glaciares.jpg",
   ];
   return (
-    <div className="grid-container">
+    <div className="grid-container" id="gallery">
       {images.map((image) => {
         return (
           <picture className="img-container gallery">

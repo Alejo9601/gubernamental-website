@@ -1,5 +1,6 @@
 import "../styles/politicianProfile.css";
 import politician from "../assets/json/politicianProfile.json";
+import placeholder from "../assets/img/yo.jpg"
 import { useParams } from "react-router-dom";
 
 const PoliticianProfile = () => {
@@ -7,11 +8,10 @@ const PoliticianProfile = () => {
 
   return (
     <section className="section-content" id="politician-profile">
+      <div className="flex-container politician-img">
+        <img src={placeholder} alt="politician" />
+      </div>
       <div className="grid-container" id="politician-grid">
-        <picture className="flex-container politician-img">
-          <source srcSet={require("../assets/img/yo.jpg")} />
-          <img alt="politician" />
-        </picture>
         <div className="flex-container" id="biography">
           <h2>{politician[0].charge}</h2>
           <h1>{politician[0].fullname}</h1>
