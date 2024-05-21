@@ -112,15 +112,25 @@
 .prev-card,
 .next-card {
    color: var(--gray);
-   font-size: 4rem;
+   height: 40px;
+   width: 40px;
    cursor: pointer;
    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
    background-color: var(--gray);
-   padding-left: 10px;
-   padding-right: 10px;
    border-radius: 50%;
    color: var(--white);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   overflow: hidden;
+}
+
+.prev-card {
+   padding-right: 2px;
+}
+.next-card {
+   padding-left: 2px;
 }
 
 /*RefButton under the slider */
