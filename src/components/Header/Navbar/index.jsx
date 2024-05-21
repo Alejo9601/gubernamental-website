@@ -1,5 +1,5 @@
 import "../../../styles/navbar.css";
-import NavbarLink from "./NavbarLink";
+import NavbarLink from "../NavbarLink";
 
 const SubmenuGovernment = [
    { baseUrl: "/government", politicianId: "Intendente" },
