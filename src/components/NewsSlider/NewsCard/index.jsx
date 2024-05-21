@@ -1,4 +1,4 @@
-import CardButton from "./CardButton";
+import CardButton from "../CardButton";
 import cerroCruz from "../../../assets/img/cerro.jpg";
 
 const NewsCard = ({ newsTitle, description, id }) => {
