@@ -17,10 +17,12 @@
    padding: 20px;
    background-color: white;
    cursor: pointer;
+   transition: transform ease 0.5s;
 }
 
 .procedure-item:hover {
-   background-color: var(--light_gray);
+   transform: scale(1.1);
+   background-color: var(--light-blue);
 }
 
 .description-container {
