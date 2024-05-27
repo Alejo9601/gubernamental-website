@@ -4,7 +4,9 @@ import "../../styles/contact.css";
 const Contact = () => {
    return (
       <section className="section-content" id="contact">
-         <ContactForm />
+         <div className="form-container">
+            <ContactForm />
+         </div>
       </section>
    );
 };
