@@ -2,72 +2,71 @@
 }
 
 .grid-container#procedures-grid {
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 25px 20px 25px 20px;
-  margin: 25px 50px 25px 50px;
-  /*max-width: 1280px;*/
-  width: 1280px;
+   grid-template-columns: 1fr 1fr 1fr;
+   padding: 25px 20px 25px 20px;
+   margin: 25px 50px 25px 50px;
+   /*max-width: 1280px;*/
+   width: 1280px;
 }
 
 .procedure-item {
-  flex-direction: row;
-  border: 1px solid lightgrey;
-  border-radius: 10px;
-  margin: 20px;
-  padding: 20px;
-  background-color: white;
-  height: 110px;
-  cursor: pointer;
+   flex-direction: row;
+   border: 1px solid lightgrey;
+   border-radius: 10px;
+   margin: 20px;
+   padding: 20px;
+   background-color: white;
+   cursor: pointer;
 }
 
 .procedure-item:hover {
-  background-color: var(--light_gray);
+   background-color: var(--light_gray);
 }
 
 .description-container {
-  display: inherit;
-  flex-direction: column;
+   display: inherit;
+   flex-direction: column;
 }
 
 .procedure-icon {
-  display: inherit;
-  align-content: flex-start;
-  height: 100%;
+   display: inherit;
+   align-content: flex-start;
+   height: 100%;
 }
 
 .procedure-icon img {
-  height: 45px;
-  width: auto;
+   height: 45px;
+   width: auto;
 }
 
 .procedure-title {
-  text-align: center;
-  padding: 5px 25px 5px 10px;
+   text-align: center;
+   padding: 5px 25px 5px 10px;
 }
 
 .procedure-description {
-  font-size: 1.5rem;
-  text-align: center;
-  padding: 5px 25px 5px 25px;
+   font-size: 1.5rem;
+   text-align: center;
+   padding: 5px 25px 5px 25px;
 }
 
 @media (max-width: 1280px) {
-  .grid-container#procedures-grid {
-    grid-template-columns: 1fr 1fr;
-    width: 860px;
-  }
+   .grid-container#procedures-grid {
+      grid-template-columns: 1fr 1fr;
+      width: 860px;
+   }
 }
 
 @media (max-width: 900px) {
-  .grid-container#procedures-grid {
-    grid-template-columns: 1fr 1fr;
-    width: 800px;
-  }
+   .grid-container#procedures-grid {
+      grid-template-columns: 1fr 1fr;
+      width: 800px;
+   }
 }
 
 @media (max-width: 800px) {
-  .grid-container#procedures-grid {
-    grid-template-columns: 1fr;
-    width: 450px;
-  }
+   .grid-container#procedures-grid {
+      grid-template-columns: 1fr;
+      width: 450px;
+   }
 }
