@@ -18,6 +18,7 @@ form {
    font-size: 1.5rem;
    margin: 10px 0px 10px 0px;
    padding: 10px;
+   border-bottom: 2px solid var(--light-gray);
 }
 
 .personal-data::placeholder,
@@ -28,7 +29,6 @@ form {
 }
 
 .personal-data {
-   border-bottom: 2px solid var(--light-gray);
    height: 50px;
 }
 
