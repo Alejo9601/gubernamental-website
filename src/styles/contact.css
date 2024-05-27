@@ -17,19 +17,20 @@ form {
    width: 600px;
    font-size: 1.5rem;
    margin: 10px 0px 10px 0px;
-   padding: 10px;
+   padding: 0px 30px 0px 30px;
    border-bottom: 2px solid var(--light-gray);
 }
 
 .personal-data::placeholder,
 .query {
    color: lightgray;
-   font-size: 1.5;
+   font-size: 1.5rem;
    text-align: center;
 }
 
 .personal-data {
    height: 50px;
+   font-size: 1.8rem;
 }
 
 .query {
