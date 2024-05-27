@@ -1,6 +1,6 @@
 import ImagesCarousel from "../components/ImagesCarousel";
 import NewsSlider from "../components/NewsSlider";
-import Procedures from "../components/Procedures";
+import ClientServices from "../components/ClientServices";
 import Contact from "../components/Contact";
 
 const Home = () => {
@@ -8,7 +8,7 @@ const Home = () => {
       <>
          <ImagesCarousel />
          <NewsSlider />
-         <Procedures />
+         <ClientServices />
          <Contact />
       </>
    );
