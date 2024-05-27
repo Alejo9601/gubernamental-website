@@ -12,17 +12,17 @@ const ClientServices = () => {
          </div>
          <div className="grid-container" id="procedures-grid">
             <ServiceItem
-               title="Querys"
+               title="Consultas"
                description="Officia in officia pariatur in Lorem sint in consequat id minim. "
                image={assistance}
             />
             <ServiceItem
-               title="Schedule a shift"
+               title="Agendar un turno"
                description="Velit nisi incididunt magna sit in minim officia qui aliqua commodo excepteur quis."
                image={clock}
             />
             <ServiceItem
-               title="Taxes"
+               title="Impuestos"
                description="Deserunt et labore ut amet minim sint cillum sint aliquip dolor amet veniam laboris. "
                image={tax}
             />
