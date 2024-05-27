@@ -1,12 +1,6 @@
-.section-content#procedures {
-}
-
 .grid-container#procedures-grid {
    grid-template-columns: 1fr 1fr 1fr;
-   padding: 25px 20px 25px 20px;
-   margin: 25px 50px 25px 50px;
-   /*max-width: 1280px;*/
-   width: 1280px;
+   padding-top: 50px;
 }
 
 .procedure-item {
