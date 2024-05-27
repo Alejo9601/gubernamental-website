@@ -1,7 +1,7 @@
 import { useRef, useEffect } from "react";
 import NewsCard from "./NewsCard";
 import TrimParagraph from "../../helpers/TrimParagraph";
-import RefButton from "../RefButton";
+import Button from "../Button";
 import newsCard from "../../assets/json/newsCard.json";
 import RightArrow from "../SVGIcons/RightArrow";
 import LeftArrow from "../SVGIcons/LeftArrow";
@@ -65,7 +65,7 @@ const NewsSlider = () => {
          <div className="next-card" onClick={() => handleSlide(true)}>
             <RightArrow />
          </div>
-         <RefButton reference={""} btnText="Ver todas"></RefButton>
+         <Button reference={""} btnText="Ver todas"></Button>
       </section>
    );
 };
