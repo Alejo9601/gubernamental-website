@@ -71,7 +71,8 @@ a {
    color: var(--gray);
 }
 
-input {
+input,
+textarea {
    outline: none;
    border: 0;
 }
