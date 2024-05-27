@@ -45,7 +45,7 @@ const NewsSlider = () => {
    return (
       <section className="section-content" id="latest-news">
          <div className="section-title" id="latest-news-title">
-            <h1>Latest News</h1>
+            <h1>Ultimas Noticias</h1>
          </div>
          <div className="prev-card" onClick={() => handleSlide(false)}>
             <LeftArrow />
@@ -65,7 +65,7 @@ const NewsSlider = () => {
          <div className="next-card" onClick={() => handleSlide(true)}>
             <RightArrow />
          </div>
-         <RefButton reference={""} btnText="View all news"></RefButton>
+         <RefButton reference={""} btnText="Ver todas"></RefButton>
       </section>
    );
 };
