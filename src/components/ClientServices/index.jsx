@@ -2,7 +2,7 @@ import ServiceItem from "./ServiceItem";
 import assistance from "../../assets/icon/apoyo.png";
 import clock from "../../assets/icon/disponibilidad.png";
 import tax from "../../assets/icon/taxes.png";
-import "../../styles/procedures.css";
+import "../../styles/services.css";
 
 const ClientServices = () => {
    return (
