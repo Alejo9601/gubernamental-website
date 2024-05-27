@@ -64,3 +64,8 @@ a {
    text-decoration: none;
    color: var(--gray);
 }
+
+input {
+   outline: none;
+   border: 0;
+}
