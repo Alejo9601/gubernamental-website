@@ -22,7 +22,7 @@ form {
 }
 
 .personal-data::placeholder,
-.query {
+.query::placeholder {
    color: lightgray;
    font-size: 1.5rem;
    text-align: center;
@@ -35,6 +35,8 @@ form {
 
 .query {
    resize: none;
+   font-size: 1.8rem;
+   padding: 20px;
 }
 
 .submit-button {
