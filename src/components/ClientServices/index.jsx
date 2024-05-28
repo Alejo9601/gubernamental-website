@@ -8,7 +8,7 @@ const ClientServices = () => {
    return (
       <section className="section-content" id="procedures">
          <div className="section-title">
-            <h1>Procedures</h1>
+            <h1>Servicios</h1>
          </div>
          <div className="grid-container" id="procedures-grid">
             <ServiceItem
