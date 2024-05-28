@@ -10,19 +10,19 @@ const ConsultForm = () => {
          <input
             className="personal-data"
             type="text"
-            placeholder="Introduce your full name ..."
+            placeholder="Introduce tu nombre completo"
             name="name"
          />
          <input
             className="personal-data"
             type="text"
-            placeholder="What is the subject?"
+            placeholder="Asunto del mensaje"
             name="last-name"
          />
          <input
             className="personal-data"
             type="email"
-            placeholder="Introduce your e-mail ..."
+            placeholder="Introduce tu correo electronico"
             name="email"
          />
          <textarea
@@ -30,7 +30,7 @@ const ConsultForm = () => {
             rows="10"
             cols="20"
             wrap="soft"
-            value="Write your message ..."
+            placeholder="Escribe el mensaje"
          />
          <FormSubmitButton textValue="Enviar" />
       </form>
