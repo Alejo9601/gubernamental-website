@@ -1,8 +1,10 @@
+import styles from "./button.module.css";
+
 const RefButton = ({ reference, btnText }) => {
    return (
-      <div className="flex-container ref-button">
+      <div className={styles.buttonsWrapper}>
          <a
-            style={{ textDecoration: "none" }}
+            className={styles.button}
             href={reference}
             target="_blank"
             rel="noreferrer noopener"

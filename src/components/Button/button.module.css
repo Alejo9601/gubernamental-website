@@ -1,0 +1,22 @@
+.buttonsWrapper {
+   display: flex;
+   width: 100%;
+   background-color: transparent;
+   justify-content: center;
+}
+
+.button {
+   cursor: pointer;
+   font-size: 2rem;
+   color: var(--blue);
+   padding: 8px 15px 8px 15px;
+   background-color: var(--white);
+   border: 2px solid var(--blue);
+   border-radius: 5px;
+   transition: all ease 0.5s;
+}
+
+.button:hover {
+   background-color: var(--blue);
+   color: var(--white);
+}
