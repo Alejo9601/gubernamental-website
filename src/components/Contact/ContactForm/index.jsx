@@ -26,7 +26,7 @@ const ConsultForm = () => {
             name="email"
          />
          <textarea
-            className="query"
+            className="message"
             rows="10"
             cols="20"
             wrap="soft"
