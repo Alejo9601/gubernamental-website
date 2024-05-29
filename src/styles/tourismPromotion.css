@@ -7,7 +7,7 @@
    flex-direction: column;
    justify-content: center;
    height: 400px;
-   width: 100dvw;
+   width: 100%;
    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("../assets/img/glaciares.jpg");
 
