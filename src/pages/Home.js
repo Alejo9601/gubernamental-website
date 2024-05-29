@@ -4,16 +4,19 @@ import ClientServices from "../components/ClientServices";
 import Contact from "../components/Contact";
 import "../../src/styles/home.css";
 import TourismPromotion from "../components/TourismPromotion";
+import HomeContentWrapper from "../components/HomeContentWrapper";
 
 const Home = () => {
    return (
       <>
          <ImagesCarousel />
-         <main className="main-wrapper">
+         <HomeContentWrapper>
             <NewsSlider />
-            <TourismPromotion />
+         </HomeContentWrapper>
+         <TourismPromotion />
+         <HomeContentWrapper className="width-90-wrapper">
             <ClientServices />
-         </main>
+         </HomeContentWrapper>
          <Contact />
       </>
    );
