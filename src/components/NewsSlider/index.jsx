@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import NewsCard from "./NewsCard";
 import TrimParagraph from "../../helpers/TrimParagraph";
 import Button from "../Button";
@@ -8,38 +8,20 @@ import LeftArrow from "../SVGIcons/LeftArrow";
 import "../../styles/newsSlider.css";
 
 const NewsSlider = () => {
+   const [slides, setSlides] = useState(0);
+   const [cardSize, setCardSize] = useState(340);
    const slider = useRef();
-   const currPosition = useRef();
 
    useEffect(() => {
-      currPosition.current = 0;
-   }, []);
+      slider.current.style.transform = `translateX(${-slides * cardSize}px)`;
+   }, [slides, cardSize]);
 
-   const slideNext = (step) => {
-      slider.current.style.transform = `translate(${
-         currPosition.current - step
-      }px)`;
-      currPosition.current = currPosition.current - step;
+   const slideNext = () => {
+      if (slides < 3) setSlides((prevSlides) => prevSlides + 1);
    };
 
-   const slidePrev = (step) => {
-      slider.current.style.transform = `translate(${
-         currPosition.current + step
-      }px)`;
-      currPosition.current = currPosition.current + step;
-   };
-
-   const handleSlide = (next) => {
-      const cards = 6;
-      const cardWidth = 340;
-      const cardsDisplayed = window.innerWidth > 1280 ? 3 : 2;
-      const sliderStep = cardWidth * cardsDisplayed; //step of 1020 or 680
-
-      const sliderLimit = next ? -sliderStep * (cards / cardsDisplayed - 1) : 0;
-
-      if (currPosition.current !== sliderLimit) {
-         next ? slideNext(sliderStep) : slidePrev(sliderStep);
-      }
+   const slidePrev = () => {
+      if (slides > 0) setSlides((prevSlides) => prevSlides - 1);
    };
 
    return (
@@ -47,7 +29,7 @@ const NewsSlider = () => {
          <div className="section-title" id="latest-news-title">
             <h1>Ultimas Noticias</h1>
          </div>
-         <div className="prev-card" onClick={() => handleSlide(false)}>
+         <div className="prev-card" onClick={() => slidePrev()}>
             <LeftArrow />
          </div>
          <div className="flex-container" id="news-slider">
@@ -62,7 +44,7 @@ const NewsSlider = () => {
                })}
             </div>
          </div>
-         <div className="next-card" onClick={() => handleSlide(true)}>
+         <div className="next-card" onClick={() => slideNext()}>
             <RightArrow />
          </div>
          <Button reference={""} btnText="Ver todas"></Button>
