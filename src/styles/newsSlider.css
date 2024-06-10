@@ -132,3 +132,9 @@
       max-width: 660px;
    }
 }
+
+@media (max-width: 880px) {
+   .flex-container#news-slider {
+      max-width: 340px;
+   }
+}
