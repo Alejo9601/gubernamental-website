@@ -1,5 +1,7 @@
+import { useState } from "react";
 import "../../../styles/navbar.css";
 import NavbarLink from "../NavbarLink";
+import BurgerButtonSVG from "../../SVGIcons/BurgerButtonSVG";
 
 const SubmenuGovernment = [
    { baseUrl: "/government", politicianId: "Intendente" },
@@ -8,9 +10,18 @@ const SubmenuGovernment = [
 ];
 
 const Navbar = ({ isMobileWidth }) => {
+   const [showNav, setShowNav] = useState(false);
+
+   function handleBurgerButton() {
+      setShowNav((prev) => !prev);
+   }
+
    return (
       <nav className="flex-container navbar">
-         <ul className="nav-links">
+         <button className="burger-button" onClick={handleBurgerButton}>
+            <BurgerButtonSVG></BurgerButtonSVG>
+         </button>
+         <ul className={`nav-links ${showNav ? "hidden" : ""}`}>
             <NavbarLink referenceTo="/home" textValue="Inicio" />
 
             <NavbarLink submenu={SubmenuGovernment} textValue="Gobierno" />

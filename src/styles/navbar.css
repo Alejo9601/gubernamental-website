@@ -4,6 +4,17 @@
    align-items: center;
 }
 
+.burger-button {
+   display: block;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   right: 10px;
+   background-color: transparent;
+   border: 0px;
+   z-index: 2;
+}
+
 /*On mobile phones*/
 #flex-mobile-menu {
    width: 100%;
@@ -14,8 +25,21 @@
 
 .nav-links {
    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
    list-style: none;
    font-size: 1.8rem;
+   background-color: black;
+   position: absolute;
+   width: 50%;
+   height: 100vh;
+   top: 0;
+   right: 0;
+}
+
+.hidden {
+   display: none;
 }
 
 .nav-item-link {
@@ -64,4 +88,18 @@
    display: block;
    padding: 10px 15px;
    color: var(--black);
+}
+
+@media (min-width: 1024px) {
+   .burger-button {
+      display: none;
+   }
+   .nav-links {
+      display: flex;
+      flex-direction: row;
+      background-color: transparent;
+      position: relative;
+      width: auto;
+      height: auto;
+   }
 }
